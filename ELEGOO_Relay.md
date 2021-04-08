@@ -2,8 +2,9 @@
 
 
 * [Description](https://www.elegoo.com/products/elegoo-8-channel-relay-module-kit)
-* [User Manual](/pdfs/ELEGOO_Relay/8 CHANNEL 5V 10A RELAY MODULE.pdf)
-* [Electric Schema PDF](/pdfs/ELEGOO_Relay/8 Channel DC 5V Relay Module with Optocoupler Schematic diagram.pdf)
+* [User Manual](/pdfs/ELEGOO_Relay/8_CHANNEL_5V_10A_RELAY_MODULE.pdf)
+* [Electric Schema PDF](/pdfs/ELEGOO_Relay/8_Channel_DC_5V_Relay_Module_with_Optocoupler_Schematic_diagram.pdf)
+
 Datasheet:
 * [Resources](https://www.elegoo.com/blogs/arduino-projects/elegoo-dc-5v-relay-module-tutorial)
 * [Relay Datasheet SRD-05VDC](/pdfs/ELEGOO_Relay/SRD-05VDC-SL-C.pdf)
