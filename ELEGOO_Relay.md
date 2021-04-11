@@ -65,7 +65,9 @@ JD-Vcc Current:
 | To Vcc      | 8 Relay |         *2  |
 
 **With 8 relays my power breadboard supply doestn provide current to close the relays, need an external powerSupply**
+
 *1 This is not a Peak value, is to maintain the relay closed
+
 *2 My multimeter is not hable to measure the maximum
 
 
@@ -74,14 +76,14 @@ JD-Vcc Current:
 
 Is important know the current demanded to Raspberry PI
 
-Vcc=3.3/ 5.0
-Vopto (Vf Forward voltage)=1.2
-Vled= 1.8  (measured with multimeter)
-R1=102 OHM
+* Vcc=3.3/ 5.0
+* Vopto (Vf Forward voltage)=1.2
+* Vled= 1.8  (measured with multimeter)
+* R1=102 OHM
 
 Volts in R1 = 3.3 - (1.2+1.8)=0.3
-I3.3 = 0.3 / 1K = **0.3 ma (3.3v)**
-I5.0 = 2 / 1K = 2 ma (5.0v)
+* I[3.3] = 0.3 / 1K = **0.3 ma (3.3v)**
+* I[5.0] = 2 / 1K = 2 ma (5.0v)
 
 ### Calculate I JD-VCC
 JD-VCC is used to give power to the opto + relay
@@ -93,8 +95,8 @@ Cirtcuit opto:
 * R9=511
 * Vbe = 1.2 Max
 
-Volts in R9 = 5v - (0.1 + 1.2 ) = 3.7v
-I opto = 3.7 / 511 = **7.24 mA**
+* Volts in R9 = 5v - (0.1 + 1.2 ) = 3.7v
+* I[opto] = 3.7 / 511 = **7.24 mA**
 
 
 Circuit Relay: 
@@ -108,6 +110,7 @@ Summary:
 
 
 In the relay data-sheet the put 480mA:
+
 ![Picture](/images/04.png)
 
 ### Two sepparate Vcc
