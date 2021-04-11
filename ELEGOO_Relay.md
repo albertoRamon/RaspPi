@@ -31,17 +31,47 @@ Datasheet:
 [Video](https://www.youtube.com/watch?v=yGem7tLQcFE)
 
 ![Picture](/images/01.png)
+
 When the siwtch is closed,the current start to grow up slowly thus the inductor create a voltage opposite to the source
 With the time, the current will grow-up until I=V/R and the voltage opposite will be 0
 
 ![Picture](/images/02.png)
+
 When the switch is oppened suddenly, the current go down too fast, creating a high voltage to try the compensate the intensity
 
 TIP: In some references, the put a resistor in serie with the inductor
 
 
+### Real Current
+Digital Input Current:
+| Input | Config       | Volts | Max Current |
+|-------|--------------|-------|-------------|
+| 1     | DInput + Vcc | 3.3v  | 1.9 mA      |
+| 1     | DInput + Vcc | 5v    | 1.9 mA      |
+| 8     | DInput + Vcc | 3.3v  | 12.66 mA    |
+| 8     | DInput + Vcc | 5v    | 12.82 mA    |
+| 8     | DInput       | 5v    | 3.34 mA     |
+| 8     | Vcc          | 5v    | 3.76 mA     |
+
+JD-Vcc Current:
+| JD-Vcc      | Status  | Max Current |
+|-------------|---------|-------------|
+| Independent | repose  | 30 mA       |
+| Independent | 1 Relay | 57 mA   *1  |
+| Independent | 4 Relay | 304 mA  *1  |
+| Independent | 8 Relay | 455 mA  *1  |
+| To Vcc      | repose  | 36 mA       |
+| To Vcc      | 1 Relay |         *2  |
+| To Vcc      | 8 Relay |         *2  |
+
+**With 8 relays my power breadboard supply doestn provide current to close the relays, need an external powerSupply**
+*1 This is not a Peak value, is to maintain the relay closed
+*2 My multimeter is not hable to measure the maximum
+
+
 ### Calculate Iin
 ![Picture](/images/03.png)
+
 Is important know the current demanded to Raspberry PI
 
 Vcc=3.3/ 5.0
@@ -71,15 +101,16 @@ Circuit Relay:
 * Type used "SRD-05VDC-SL-C" thus, Coil Sensitivity L=0.36W (high sensitivity)
 * Coil Voltage = 5 V, thus nominal current **71.4 mA**
 
-I JD-VCC (3.3) per relay = 0.3 + 7.24 + 71.4 = **78.9 mA**
-I JD-VCC (5.0) per relay = 2 + 7.24 + 71.4 = 80.6 mA
-
-I JD-VCC (3.3) total =  92.34 mA * 8 = **631 mA**
+Summary:
+* Current for JD-VCC (3.3) per relay = 0.3 + 7.24 + 71.4 = **78.9 mA**
+* Current for JD-VCC (5.0) per relay = 2 + 7.24 + 71.4 = 80.6 mA
+* Current for jD-VCC (3.3) total =  92.34 mA * 8 = **631 mA**
 
 
 In the relay data-sheet the put 480mA:
 ![Picture](/images/04.png)
 
+### Two sepparate Vcc
 
 
 
