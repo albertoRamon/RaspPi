@@ -25,11 +25,12 @@ Custom allow define an hierarchy
 
 ## Types by Wave form
 
-|  Wave form              | ICON   | AC  |  A  |  F  |  B  |
-| ----------------------- | ------ | --- | --- | --- | --- |
-| Senoidal                | 0.30s  | X   | X   | X   | X   |
-| Pulsante                | 0.50s  | -   | X   | X   | X   |
-| Pulsante Rectificada    | 0.13s  | -   | X   | X   | X   |
-| Pulsante + Continua     | 0.13s  | -   | X   | X   | X   |
-| High Frequency (10KHz)  | 0.13s  | -   | -   | X   | X   |
-| Continua                | 0.13s  | -   | -   | -   | X   |
+|  Wave form              | ICON   | AC                              |  A                              |  F                                                            |  B                                                                                          |
+| ----------------------- | ------ | ------------------------------- | ------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| ICON  RCD               | N.A    | ![alt text](/Pictures/01.png)   | ![alt text](/Pictures/02.png)   | ![alt text](/Pictures/02.png) ![alt text](/Pictures/04.png)   | ![alt text](/Pictures/02.png) ![alt text](/Pictures/04.png)  ![alt text](/Pictures/03.png)  |
+| Senoidal  50Hz          | 0.30s  | X                               | X                               | X                                                             | X                                                                                           |
+| Pulsante  50Hz          | 0.50s  | -                               | X                               | X                                                             | X                                                                                           |
+| Pulsante Rectificada    | 0.13s  | -                               | X                               | X                                                             | X                                                                                           |
+| Pulsante + Continua     | 0.13s  | -                               | X                               | X                                                             | X                                                                                           |
+| High Frequency (10KHz)  | 0.13s  | -                               | -                               | X                                                             | X                                                                                           |
+| Continua                | 0.13s  | -                               | -                               | -                                                             | X                                                                                           |
