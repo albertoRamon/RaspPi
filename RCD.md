@@ -1,18 +1,18 @@
-# RCD (Residual Current Device) [Difrerenciales]
+# RCD (Residual Current Device) /  Differential Circuit Breaker
 
 
 ## Types by protection
 [RCD Classifications](https://electrical-engineering-portal.com/types-of-residual-current-devices-rcd)
 * RCCB (Residual Current Circuit-Breaker):  Without overload protection
 * RCBO (Residual Current Circuit-Breaker with protection against overload): With overload protection
-
-  I.E [Schneider Multi9 RCBO](https://www.se.com/uk/en/product-range/1104-multi-9/12367803577-residual-current-devices-rcd/?N=1339672414) [CNC RCBO](https://cnc-official.com/search?type=product&options%5Bprefix%5D=last&options%5Bunavailable_products%5D=last&q=RCBO)
+   * RCBO = RCCB + MCB
+   * I.E [Schneider Multi9 RCBO](https://www.se.com/uk/en/product-range/1104-multi-9/12367803577-residual-current-devices-rcd/?N=1339672414) OR [CNC RCBO](https://cnc-official.com/search?type=product&options%5Bprefix%5D=last&options%5Bunavailable_products%5D=last&q=RCBO)
 * MRCD (Modular Residual Current Device): Have a toridal to measure Current [Link](https://www.bender.de/fileadmin/content/Products/f/e/MRCD_Fly_en.pdf)
 * RCM (Residual Current Monitor): 
 * CBR (Circuit Breaker incorpoorating Residual Current Proctection)
 * SRCD (Socket-Outlet incorpoorating a Residual Current Device): Is a plug with RCD [Link](https://www.google.com/search?q=srcd+RCD&tbm=isch&ved=2ahUKEwiWieKKteT_AhUmsCcCHbvYAe0Q2-cCegQIABAA&oq=srcd+RCD&gs_lcp=CgNpbWcQAzoHCAAQigUQQzoFCAAQgAQ6BggAEAUQHjoGCAAQBxAeOgcIABAYEIAEUOkBWJ8HYKgJaABwAHgAgAFLiAG8AZIBATOYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=VVebZNaKD6bgnsEPu7GH6A4&bih=919&biw=958&rlz=1C1GCEA_enGB995GB995)
 * PRCD (Portable Residual Current Device): Similar to the previous [Link](https://www.google.com/search?q=*+PRCD+(Portable+Residual+Current+Device)%3A+RCD&tbm=isch&ved=2ahUKEwiPy_aQteT_AhVXmicCHV__AQEQ2-cCegQIABAA&oq=*+PRCD+(Portable+Residual+Current+Device)%3A+RCD&gs_lcp=CgNpbWcQA1DSCljSCmCXGGgAcAB4AIABRIgBfZIBATKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=YlebZI-SCte0nsEP3_6HCA&bih=919&biw=958&rlz=1C1GCEA_enGB995GB995)
-* ELCF (Earth-leakage circuit breaker): Is the old name for RCCB
+* ELCB (Earth-leakage circuit breaker): Is the old name for RCCB
 
 
 ## Types by Response time
@@ -53,6 +53,14 @@ Custom allow define an hierarchy (Selectivity)
 | F        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)                                      | <p> Frequency Controlled / Variable speed driver <p> Air Acconditioner / Washing machines & dishwasher / Tumble Driers   |
 | B        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)  <p>  ![alt text](/Pictures/03.png)  | <p> For single and 3 Phase equipment <p> Inverter , UPS, photovoltaic system, Lifts, escalator, welding equipment     |
 
+
+## Type F / A-SI : High immunization / Superimmunized
+* Must be tested as Type A
+* Other Icons:
+
+|  ICON                           | ICON                            |
+| ------------------------------- | ------------------------------- |  
+| ![alt text](/Pictures/08.png)   | ![alt text](/Pictures/08.png)   |
 
 ## Type S (Time - Delayed)
 
