@@ -10,6 +10,7 @@
 * CBR (Circuit Breaker incorpoorating Residual Current Proctection)
 * SRCD (Socket-Outlet incorpoorating a Residual Current Device): Is a plug with RCD [Link](https://www.google.com/search?q=srcd+RCD&tbm=isch&ved=2ahUKEwiWieKKteT_AhUmsCcCHbvYAe0Q2-cCegQIABAA&oq=srcd+RCD&gs_lcp=CgNpbWcQAzoHCAAQigUQQzoFCAAQgAQ6BggAEAUQHjoGCAAQBxAeOgcIABAYEIAEUOkBWJ8HYKgJaABwAHgAgAFLiAG8AZIBATOYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=VVebZNaKD6bgnsEPu7GH6A4&bih=919&biw=958&rlz=1C1GCEA_enGB995GB995)
 * PRCD (Portable Residual Current Device): Similar to the previous [Link](https://www.google.com/search?q=*+PRCD+(Portable+Residual+Current+Device)%3A+RCD&tbm=isch&ved=2ahUKEwiPy_aQteT_AhVXmicCHV__AQEQ2-cCegQIABAA&oq=*+PRCD+(Portable+Residual+Current+Device)%3A+RCD&gs_lcp=CgNpbWcQA1DSCljSCmCXGGgAcAB4AIABRIgBfZIBATKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=YlebZI-SCte0nsEP3_6HCA&bih=919&biw=958&rlz=1C1GCEA_enGB995GB995)
+* ELCF (Earth-leakage circuit breaker): Is the old name for RCCB
 
 
 ## Types by Response time
@@ -18,22 +19,46 @@
 | ------------- | ----- | ----- | ----- |
 | Generic (max) | 0.30s | 0.15s | 0.04s |
 | Custom  (max) | 0.50s | 0.20s | 0.15s |
-| Custom (min)  | 0.13s | 0.06s | 0.05s |
+| Custom  (min) | 0.13s | 0.06s | 0.05s |
 
-Custom allow define an hierarchy
+Custom allow define an hierarchy (Selectivity)
 
 
 ## Types by Wave form
 
-|  Wave form              | ICON                           | AC                              |  A                              |  F                                                            |  B                                                                                          |    In     |
+|  Wave form              | ICON                           | AC                              |  A                              |  F                                                            |  B                                                                                          |    Activation Trigger      |
 | ----------------------- | ------------------------------ | ------------------------------- | ------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | -------- |
-| ICON  RCD               | N.A                            | ![alt text](/Pictures/01.png)   | ![alt text](/Pictures/02.png)   | ![alt text](/Pictures/02.png) ![alt text](/Pictures/04.png)   | ![alt text](/Pictures/02.png) ![alt text](/Pictures/04.png)  ![alt text](/Pictures/03.png)  | 0.5 - 1 In  |
-| Senoidal  50Hz          | ![alt text](/Pictures/0A.png)  | X                               | X                               | X                                                             | X                                                                                           | 0.35 -1.4 In        |
-| Pulsante  50Hz          | ![alt text](/Pictures/0B.png)  | -                               | X                               | X                                                             | X                                                                                           |  <p> 0.25 - 1.4 In (90)  <p>  0.11 - 1.4 In (135)     |
-| Pulsante Rectificada    | ![alt text](/Pictures/0C.png)  | -                               | X                               | X                                                             | X                                                                                           |         |
-| Pulsante + DC           | ![alt text](/Pictures/0D.png)  | -                               | X                               | X                                                             | X                                                                                           |         |
-| High Frequency (10KHz)  | ![alt text](/Pictures/0E.png)  | -                               | -                               | X                                                             | X                                                                                           |         |
-| DC                      | ![alt text](/Pictures/0F.png)  | -                               | -                               | -                                                             | X                                                                                           |         |
+| ICON  RCD               | N.A                            | ![alt text](/Pictures/01.png)   | ![alt text](/Pictures/02.png)   | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)   | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)  <p>  ![alt text](/Pictures/03.png)  | N.A. |
+| Sinusoidal AC  50Hz     | ![alt text](/Pictures/0A.png)  | X                               | X                               | X                                                             | X                                                                                           | 0.5 - 1 IΔn             |
+| Pulsating  50Hz         | ![alt text](/Pictures/0B.png)  | -                               | X                               | X                                                             | X                                                                                           | 0.35 -1.4 IΔn                          |
+| Pulsating Rectificada   | ![alt text](/Pictures/0C.png)  | -                               | X                               | X                                                             | X                                                                                           | <p> 0.25 - 1.4 In (90º)  <p>0.11 - 1.4 In (135º)     |
+| Pulsating + DC          | ![alt text](/Pictures/0D.png)  | -                               | X                               | X                                                             | X                                                                                           | <p> 1.4In + 6mA (Type A) <p> 1.4In + 10mA (Type F) <p> 1.4In + 0.4In (Type B)        |
+| High Frequency (1KHz)   | ![alt text](/Pictures/0E.png)  | -                               | -                               | X                                                             | X                                                                                           | 0.5 - 1.4 In             |
+| DC                      | ![alt text](/Pictures/0F.png)  | -                               | -                               | -                                                             | X                                                                                           | 0.5 - 2 In             |
 
 
-* AC
+* For AC 50 Hz, if IΔn is 30 mA, the trigger must be done between 15-30mA
+* For pulse AC,  Type AC won't be activated
+* For Pulsante + DC: Type A, must allow (before Trigger) 1.4 IΔn (AC component) + 6mA (DC component)
+* For > 50Hz, only  type F & B can protect
+* For DC, only Type B can protect
+
+
+|  Type    | ICON                           |  Comments |
+| -------- | ------------------------------ | ---------- | 
+| AC       | ![alt text](/Pictures/01.png)  | <p> General type:  <p> equipment resistive / capacitive / inductive <p> without electronic component <p> Electric Showers / Oven / hub / **Tugsten** Light      |
+| A        | ![alt text](/Pictures/02.png)  | <p> Pulsating can be until 6mA <b> Electronic Components: <p>  Inverters, Leds, PowerSupply Class II, **Induction** Hobs, Electric Vehicle      |
+| F        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)     | <p>    Frequency Controlled / Variable speed driver <p> Air Acconditioner / Washing machines & dishwasher / Tumble Driers /   |
+| B        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)  <p>  ![alt text](/Pictures/03.png))  | <p>  For single and 3 Phase equipment <p> Inverter , UPS, photovoltaic system, Lifts, escalator, welding equipment     |
+
+
+## Type S (Time - Delayed)
+
+
+## Selectivity (Discrimination)
+* Important when we have 'n' RCD in Series (RCD Chained)
+*
+* Simbol: ![alt text](/Pictures/06.png)
+
+## How this work
+![alt text](/Pictures/05.png)
