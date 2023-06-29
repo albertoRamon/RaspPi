@@ -5,6 +5,7 @@
 [RCD Classifications](https://electrical-engineering-portal.com/types-of-residual-current-devices-rcd)
 * RCCB (Residual Current Circuit-Breaker):  Without overload protection
 * RCBO (Residual Current Circuit-Breaker with protection against overload): With overload protection
+  I.E [Schneider Multi9 RCBO](https://www.se.com/uk/en/product-range/1104-multi-9/12367803577-residual-current-devices-rcd/?N=1339672414) [CNC RCBO](https://cnc-official.com/search?type=product&options%5Bprefix%5D=last&options%5Bunavailable_products%5D=last&q=RCBO)
 * MRCD (Modular Residual Current Device): Have a toridal to measure Current [Link](https://www.bender.de/fileadmin/content/Products/f/e/MRCD_Fly_en.pdf)
 * RCM (Residual Current Monitor): 
 * CBR (Circuit Breaker incorpoorating Residual Current Proctection)
@@ -44,12 +45,12 @@ Custom allow define an hierarchy (Selectivity)
 * For DC, only Type B can protect
 
 
-|  Type    | ICON                           |  Comments |
-| -------- | ------------------------------ | ---------- | 
-| AC       | ![alt text](/Pictures/01.png)  | <p> General type:  <p> equipment resistive / capacitive / inductive <p> without electronic component <p> Electric Showers / Oven / hub / **Tugsten** Light      |
-| A        | ![alt text](/Pictures/02.png)  | <p> Pulsating can be until 6mA <b> Electronic Components: <p>  Inverters, Leds, PowerSupply Class II, **Induction** Hobs, Electric Vehicle      |
-| F        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)     | <p>    Frequency Controlled / Variable speed driver <p> Air Acconditioner / Washing machines & dishwasher / Tumble Driers /   |
-| B        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)  <p>  ![alt text](/Pictures/03.png))  | <p>  For single and 3 Phase equipment <p> Inverter , UPS, photovoltaic system, Lifts, escalator, welding equipment     |
+|  Type    | ICON                                                                                                     |  Comments |
+| -------- | -------------------------------------------------------------------------------------------------------- | ---------- | 
+| AC       | ![alt text](/Pictures/01.png)                                                                            | <p> General type:  <p> Equipment resistive / capacitive / inductive <p> without electronic component <p> Electric Showers / Oven / hub / **Tugsten** Light      |
+| A        | ![alt text](/Pictures/02.png)                                                                            | <p> Pulsating can be until 6mA <p> Electronic Components: <p>  Inverters, Leds, PowerSupply Class II, **Induction** Hobs, Electric Vehicle      |
+| F        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)                                      | <p> Frequency Controlled / Variable speed driver <p> Air Acconditioner / Washing machines & dishwasher / Tumble Driers   |
+| B        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)  <p>  ![alt text](/Pictures/03.png)  | <p> For single and 3 Phase equipment <p> Inverter , UPS, photovoltaic system, Lifts, escalator, welding equipment     |
 
 
 ## Type S (Time - Delayed)
