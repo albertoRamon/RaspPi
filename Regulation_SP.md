@@ -21,15 +21,16 @@
    * Protect our from **External** over currenct
    * Transitorias (Rayos, Microsegundos)
       * Deriban a tierra, no hay tiempo de abrir circuito
+      
       ![alt text](/Pictures/18.png)
-	  
-	  * Internally uses a Varistor: cuando el voltaje es muy alto la resistencia disminuya
-	  ![alt text](/Pictures/20.png)
-	  
+      
+      * Internally uses a Varistor: cuando el voltaje es muy alto la resistencia disminuya
+      ![alt text](/Pictures/20.png)
+       
    * Permanentes (> miliseconds) IE. Rotura del neutro
    Open the circuit
     ![alt text](/Pictures/19.png)
-	
+    
    * Transitorias: Recomendable* (IT-23 REBT)
    Endesa (NRZ103) Obligatoria
    ![alt text](/Pictures/17.png)
