@@ -31,9 +31,19 @@ Tripping Current:
 | Type S (max) | 0.50s | 0.20s | 0.15s |
 | Type S (min) | 0.13s | 0.06s | 0.04s |
 
+| Type G  |  Type S     |
+| ----------------------------- | --------------------------------- |
+| ![alt text](/Pictures/15.png) | ![alt text](/Pictures/14.png)     |
+
 
 ### Types by Sensibility (IΔn)
 
+| Sensibility  | IΔn        |
+| ------------ | ---------- |
+| Very High    | 10 mA      |
+| High         | 30 mA      |
+| Normal       | 100-300 mA |
+| Low          | 0.5 - 1 A  |
 
 
 ## Types by Wave form
@@ -102,9 +112,9 @@ Residual Current that always exits, even without isolation fault
 
 Conditions:
 * Selectivity Amperimetrica: Top RCD must have 2x IΔn than bottom
-	See [Types by Sensibility]()
+	See [Types by Sensibility](https://github.com/albertoRamon/RaspPicoIOT/blob/main/RCD.md#types-by-sensibility-i%CE%B4n)
 * Selectivity Cronometrica: Top RCD must have a response time > bottom
-	See [Types by Response time  (G vs S)]()
+	See [Types by Response time  (G vs S)](https://github.com/albertoRamon/RaspPicoIOT/blob/main/RCD.md#types-by-response-time--g-vs-s)
 
 
 
