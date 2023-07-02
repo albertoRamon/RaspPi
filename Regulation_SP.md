@@ -22,6 +22,7 @@
    * Transitorias (Rayos, Microsegundos)
       * Deriban a tierra, no hay tiempo de abrir circuito
       ![alt text](/Pictures/18.png)
+	  
 	  * Internally uses a Varistor: cuando el voltaje es muy alto la resistencia disminuya
 	  ![alt text](/Pictures/20.png)
 	  
