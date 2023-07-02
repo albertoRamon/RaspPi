@@ -1,15 +1,16 @@
 
 
 # MCB (Miniature Circuit Breaker)
-IEC 60898
+* IEC 60898
+* [Interruptor de control de potencia, ICP]
 
 
 ###  Tripping Curve standard 
 Allow define an hierarchy (Selectivity)
 ![alt text](/Pictures/13.png)
-Curve B: Is the standard for domestic
-Curve C
-Curve D
+* Curve B: Is the standard for domestic
+* Curve C
+* Curve D
 
 ### Breaking capacity
 The maximum size of short-circuit current that can be handled.

@@ -104,7 +104,6 @@ Residual Current that always exits, even without isolation fault
 
 
 ## Type S (Time - Delayed) / Selectivity (Discrimination) / Vertical Selectivity / Coordination
-![alt text](/Pictures/12.png) 
 
 [Video: Selectividad diferencial vertical](https://www.youtube.com/watch?v=8oNrytLkZLY)
 

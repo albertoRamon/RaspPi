@@ -14,16 +14,16 @@
    * Protect our distribution panel from overcurrents
    * Esta en la cabecera del cuadro, directamente de la derivacion individual
 
-* Interruptor General Automatico (PIA) [es un magetoterminco]  
-   * Protect one circuit
+* Pequeno interruptor Automatico (PIA) [es un magetoterminco]  
+   * Protect **one** circuit
    
 * Protector contra sobretensiones (PCS)
    * Protect our from **External** over currenct
    * Transitorias (Rayos, Microsegundos)
       * Deriban a tierra, no hay tiempo de abrir circuito
-        ![alt text](/Pictures/18.png)
+      ![alt text](/Pictures/18.png)
 	  * Internally uses a Varistor: cuando el voltaje es muy alto la resistencia disminuya
-	    ![alt text](/Pictures/20.png)
+	  ![alt text](/Pictures/20.png)
 	  
    * Permanentes (> miliseconds) IE. Rotura del neutro
    Open the circuit
