@@ -106,36 +106,39 @@ Residual Current that always exits, even without isolation fault
 ## Type S (Time - Delayed) / Selectivity (Discrimination) / Vertical Selectivity / Coordination
 
 [Video: Selectividad diferencial vertical](https://www.youtube.com/watch?v=8oNrytLkZLY)
+[Circuitor: The 3 essential rules for selectivity in earth leakage protection](https://circutor.com/en/articles/the-3-essential-rules-for-selectivity-in-earth-leakage-protection/)
+
 
 * Important when we have 'n' RCD in Series (RCD Chained)
 * Simbol: ![alt text](/Pictures/06.png)
 
 Conditions:
-* Selectivity Amperimetrica: Top RCD must have 2x IΔn than bottom
+* Amperometric selectivity: upstream RCD must have 2x IΔn than downstream
 	See [Types by Sensibility](https://github.com/albertoRamon/RaspPicoIOT/blob/main/RCD.md#types-by-sensibility-i%CE%B4n)
-* Selectivity Cronometrica: Top RCD must have a response time > bottom
+* Selectivity Cronometrica: upstream RCD must have a response time > downstream
 	See [Types by Response time  (G vs S)](https://github.com/albertoRamon/RaspPicoIOT/blob/main/RCD.md#types-by-response-time--g-vs-s)
-
+* Type selectivity: upstream must be the same or higer type than downstream (AC < A < F < B)
+![alt text](/Pictures/21.png)
 
 ### If you have a chain of 2 RCD
-1. Type G (bottom)
-2. Type S (Type)
+1. Type G (downstream)
+2. Type S (upstream)
 
 ### If you have a chain of >2 RCD, you **can't** do this: 
-1. Type G (bottom)
-2. Type S (Type)
-3. Type S (Type)
+1. Type G (downstream)
+2. Type S (upstream)
+3. Type S (upstream)
 Because level 2 & 3 have same response time
 Solution: 
-1. Type G (bottom)
-2. Type S (Type)
+1. Type G (downstream)
+2. Type S (upstream)
 3. Residual current protection relay
 [Schenaider RH99M](https://www.se.com/uk/en/product/56173/residual-current-protection-relay-vigirex-rh99m-30-ma-to-30-a-220-240-vac-50-60-hz-din-rail-mounting/)
 
-### Σ Residual Current in bottom level
+### Σ Residual Current in downstream level
 ![alt text](/Pictures/16.png)
 The problem in this scenario is:
 * If the permanent residual current of each room is 10 mA
 * them, the sum of all bottom level is 60mA
-* For the Top RCD 60 mA of permanent residual current will produce spurious trip
-* The solution: RCD top level IΔn = 300 mA
+* For the upstream RCD 60 mA of permanent residual current will produce spurious trip
+* The solution: RCD upstream level IΔn = 300 mA

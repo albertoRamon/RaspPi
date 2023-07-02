@@ -4,6 +4,9 @@
 * IEC 60898
 * [Interruptor de control de potencia, ICP]
 
+## How this work
+* short-circuit: Magnetic
+* Overload: Thermic (bimetal)
 
 ###  Tripping Curve standard 
 Allow define an hierarchy (Selectivity)
