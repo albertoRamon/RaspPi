@@ -25,11 +25,14 @@ Tripping Current:
 * Type G: General
 * Type S: Selectivity
 
-|              | In x1 | In x2 | In x5 |
+|              | 1xIΔn | 2xIΔn | 5xIΔn |
 | ------------ | ----- | ----- | ----- |
 | Type G (max) | 0.30s | 0.15s | 0.04s |
 | Type S (max) | 0.50s | 0.20s | 0.15s |
 | Type S (min) | 0.13s | 0.06s | 0.04s |
+
+
+### Types by Sensibility (IΔn)
 
 
 
@@ -99,8 +102,9 @@ Residual Current that always exits, even without isolation fault
 
 Conditions:
 * Selectivity Amperimetrica: Top RCD must have 2x IΔn than bottom
+	See [Types by Sensibility]()
 * Selectivity Cronometrica: Top RCD must have a response time > bottom
-	[See Types by Response time  (G vs S)]()
+	See [Types by Response time  (G vs S)]()
 
 
 
