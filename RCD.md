@@ -14,16 +14,23 @@
 * PRCD (Portable Residual Current Device): Similar to the previous [Link](https://www.google.com/search?q=*+PRCD+(Portable+Residual+Current+Device)%3A+RCD&tbm=isch&ved=2ahUKEwiPy_aQteT_AhVXmicCHV__AQEQ2-cCegQIABAA&oq=*+PRCD+(Portable+Residual+Current+Device)%3A+RCD&gs_lcp=CgNpbWcQA1DSCljSCmCXGGgAcAB4AIABRIgBfZIBATKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=YlebZI-SCte0nsEP3_6HCA&bih=919&biw=958&rlz=1C1GCEA_enGB995GB995)
 * ELCB (Earth-leakage circuit breaker): Is the old name for RCCB
 
+## How this work
+![alt text](/Pictures/05.png)
+Tripping Current:
+*  0.5x IΔn don't be triggered 
+*  0.5 -1 IΔn ==> uncertainty
+*  1x IΔn must be triggered
 
-## Types by Response time
+### Types by Response time  (G vs S)
+* Type G: General
+* Type S: Selectivity
 
-|               | In x1 | In x2 | In x5 |
-| ------------- | ----- | ----- | ----- |
-| Generic (max) | 0.30s | 0.15s | 0.04s |
-| Custom  (max) | 0.50s | 0.20s | 0.15s |
-| Custom  (min) | 0.13s | 0.06s | 0.05s |
+|              | In x1 | In x2 | In x5 |
+| ------------ | ----- | ----- | ----- |
+| Type G (max) | 0.30s | 0.15s | 0.04s |
+| Type S (max) | 0.50s | 0.20s | 0.15s |
+| Type S (min) | 0.13s | 0.06s | 0.04s |
 
-Custom allow define an hierarchy (Selectivity)
 
 
 ## Types by Wave form
@@ -71,7 +78,7 @@ Residual Current that always exits, even without isolation fault
 | ![alt text](/Pictures/11.png)       | Must have capatitator filter between L and E: <p> thus, create a residual current permanent |
 | ![alt text](/Pictures/12.png)       | between 0.5 - 1 mA |
 
-### spurious trip  [Disparo intenspestivo] / false positives 
+### spurious trip / unwanted Tripping  [Disparo intenspestivo] / false positives 
 
 |  The sum of all must be < 30% IΔn  in any case            |
 | --------------------------------------------------------- |  
@@ -83,17 +90,18 @@ Residual Current that always exits, even without isolation fault
 
 
 
-## Type S (Time - Delayed)
+## Type S (Time - Delayed) / Selectivity (Discrimination) / Vertical Selectivity / Coordination
+![alt text](/Pictures/12.png) 
+[Selectividad diferencial vertical](https://www.youtube.com/watch?v=8oNrytLkZLY)
 
-
-
-
-## Selectivity (Discrimination)
 * Important when we have 'n' RCD in Series (RCD Chained)
-*
 * Simbol: ![alt text](/Pictures/06.png)
 
+Conditions:
+* Selectivity Amperimetrica: Top RCD must have 2x IΔn than bottom
+* Selectivity Cronometrica: Top RCD must have a response time > bottom
+	[See Types by Response time  (G vs S)]()
 
 
-## How this work
-![alt text](/Pictures/05.png)
+
+
