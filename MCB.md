@@ -1,6 +1,6 @@
 
 
-# MCB (MIniature Circuit Breaker)
+# MCB (Miniature Circuit Breaker)
 IEC 60898
 
 

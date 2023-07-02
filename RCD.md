@@ -18,7 +18,7 @@
 ![alt text](/Pictures/05.png)
 Tripping Current:
 *  0.5x IΔn don't be triggered 
-*  0.5 -1 IΔn ==> uncertainty
+*  0.5-1 IΔn ==> uncertainty
 *  1x IΔn must be triggered
 
 ### Types by Response time  (G vs S)
@@ -105,7 +105,8 @@ Residual Current that always exits, even without isolation fault
 
 ## Type S (Time - Delayed) / Selectivity (Discrimination) / Vertical Selectivity / Coordination
 ![alt text](/Pictures/12.png) 
-[Selectividad diferencial vertical](https://www.youtube.com/watch?v=8oNrytLkZLY)
+
+[Video: Selectividad diferencial vertical](https://www.youtube.com/watch?v=8oNrytLkZLY)
 
 * Important when we have 'n' RCD in Series (RCD Chained)
 * Simbol: ![alt text](/Pictures/06.png)
@@ -117,5 +118,25 @@ Conditions:
 	See [Types by Response time  (G vs S)](https://github.com/albertoRamon/RaspPicoIOT/blob/main/RCD.md#types-by-response-time--g-vs-s)
 
 
+### If you have a chain of 2 RCD
+1. Type G (bottom)
+2. Type S (Type)
 
+### If you have a chain of >2 RCD, you **can't** do this: 
+1. Type G (bottom)
+2. Type S (Type)
+3. Type S (Type)
+Because level 2 & 3 have same response time
+Solution: 
+1. Type G (bottom)
+2. Type S (Type)
+3. Residual current protection relay
+[Schenaider RH99M](https://www.se.com/uk/en/product/56173/residual-current-protection-relay-vigirex-rh99m-30-ma-to-30-a-220-240-vac-50-60-hz-din-rail-mounting/)
 
+### Σ Residual Current in bottom level
+![alt text](/Pictures/16.png)
+The problem in this scenario is:
+* If the permanent residual current of each room is 10 mA
+* them, the sum of all bottom level is 60mA
+* For the Top RCD 60 mA of permanent residual current will produce spurious trip
+* The solution: RCD top level IΔn = 300 mA
