@@ -46,15 +46,15 @@ Custom allow define an hierarchy (Selectivity)
 * For DC, only Type B can protect
 
 
-|  Type    | ICON                                                                                                     |  Comments |
-| -------- | -------------------------------------------------------------------------------------------------------- | ---------- | 
-| AC       | ![alt text](/Pictures/01.png)                                                                            | <p> General type:  <p> Equipment resistive / capacitive / inductive <p> without electronic component <p> Electric Showers / Oven / hub / **Tugsten** Light      |
-| A        | ![alt text](/Pictures/02.png)                                                                            | <p> Pulsating can be until 6mA <p> Electronic Components: <p>  Inverters, Leds, PowerSupply Class II, **Induction** Hobs, Electric Vehicle      |
-| F        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)                                      | <p> Frequency Controlled / Variable speed driver <p> Air Acconditioner / Washing machines & dishwasher / Tumble Driers   |
-| B        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)  <p>  ![alt text](/Pictures/03.png)  | <p> For single and 3 Phase equipment <p> Inverter , UPS, photovoltaic system, Lifts, escalator, welding equipment     |
+|  Type    | ICON                                                                                                     |  Comments                                                                                            |   Examples |
+| -------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | 
+| AC       | ![alt text](/Pictures/01.png)                                                                            | <p> General type:  <p> Equipment resistive / capacitive / inductive <p> without electronic component | Electric Showers / Oven / hub / **Tugsten** Light      |
+| A        | ![alt text](/Pictures/02.png)                                                                            | <p> Pulsating can have a DC of max 6mA <p>  ![alt text](/Pictures/02.png) <p> Electronic Components  | Inverters, Leds, PowerSupply Class II, **Induction** Hobs, Electric Vehicle      |
+| F        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)                                      | <p> Frequency Controlled / Variable speed driver                                           |  Air Acconditioner / Washing machines & dishwasher / Tumble Driers   |
+| B        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)  <p>  ![alt text](/Pictures/03.png)  | <p> For single and 3 Phase equipment                                                      | Inverter , UPS, photovoltaic system, Lifts, escalator, welding equipment     |
 
 
-## Type F / A-SI : High immunization / Superimmunized
+## Type F / SI : High immunization / Superimmunized
 * Must be tested as Type A
 * Other Icons:
 
