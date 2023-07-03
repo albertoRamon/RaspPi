@@ -59,13 +59,21 @@ BUT, if the RCD is digital, you will need this configuration:
 
 ### Types by Response time  (G vs S)
 * Type G: General (= no delayed)
+MIN time to Tripping = 10 ms
 * Type S: Selectivity (= delayed)
+MIN time to Tripping = 40 ms
 
 |              | 1xIΔn | 2xIΔn | 5xIΔn |  500A IΔn |
 | ------------ | ----- | ----- | ----- | --------- |
 | Type G (max) | 0.30s | 0.15s | 0.04s | 0.04s     |
+| Type G (min) | 0.01s | 0.01s | 0.01s | 0.01s     |
 | Type S (max) | 0.50s | 0.20s | 0.15s | 0.15s     |
 | Type S (min) | 0.13s | 0.06s | 0.05s | 0.04s     |
+
+Why 10 ms for G is the minimum?
+![alt text](/Pictures/28.png)
+at 50 Hz, is half wave, thus will be a voltage through zero
+
 
 | Type G  |  Type S     |
 | ----------------------------- | --------------------------------- |
@@ -99,15 +107,15 @@ Normalized values for IΔn:
 
 ## Types by Wave form
 
-|  Wave form              | ICON                           | AC                              |  A                              |  F                                                            |  B                                                                                          |    Activation Trigger      |
-| ----------------------- | ------------------------------ | ------------------------------- | ------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | -------- |
-| ICON  RCD               | N.A                            | ![alt text](/Pictures/01.png)   | ![alt text](/Pictures/02.png)   | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)   | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)  <p>  ![alt text](/Pictures/03.png)  | N.A. |
-| Sinusoidal AC  50Hz     | ![alt text](/Pictures/0A.png)  | X                               | X                               | X                                                             | X                                                                                           | 0.5 - 1 IΔn             |
-| Pulsating  50Hz         | ![alt text](/Pictures/0B.png)  | -                               | X                               | X                                                             | X                                                                                           | 0.35 -1.4 IΔn                          |
-| Pulsating Rectificada   | ![alt text](/Pictures/0C.png)  | -                               | X                               | X                                                             | X                                                                                           | <p> 0.25 - 1.4 In (90º)  <p>0.11 - 1.4 In (135º)     |
-| Pulsating + DC          | ![alt text](/Pictures/0D.png)  | -                               | X                               | X                                                             | X                                                                                           | <p> 1.4In + 6mA (Type A) <p> 1.4In + 10mA (Type F) <p> 1.4In + 0.4In (Type B)        |
-| High Frequency (1KHz)   | ![alt text](/Pictures/0E.png)  | -                               | -                               | X                                                             | X                                                                                           | 0.5 - 1.4 In             |
-| DC                      | ![alt text](/Pictures/0F.png)  | -                               | -                               | -                                                             | X                                                                                           | 0.5 - 2 In             |
+|  Wave form              | ICON                           | AC                              |  A                              |  F                                                                    |  B                                                                                                       |    Activation Trigger                                                                |
+| ----------------------- | ------------------------------ | ------------------------------- | ------------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| ICON  RCD               | N.A                            | ![alt text](/Pictures/01.png)   | ![alt text](/Pictures/02.png)   | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)   | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)  <p>  ![alt text](/Pictures/03.png)  | N.A.                                   |
+| Sinusoidal AC  50Hz     | ![alt text](/Pictures/0A.png)  | X                               | X                               | X                                                                     | X                                                                                                        | 0.5 - 1 IΔn                            |
+| Pulsating  50Hz         | ![alt text](/Pictures/0B.png)  | -                               | X                               | X                                                                     | X                                                                                                        | 0.35 -1.4 IΔn                          |
+| Pulsating Rectificada   | ![alt text](/Pictures/0C.png)  | -                               | X                               | X                                                                     | X                                                                                                        | <p> 0.25 - 1.4 In (90º)  <p>0.11 - 1.4 In (135º)     |
+| Pulsating + DC          | ![alt text](/Pictures/0D.png)  | -                               | X                               | X                                                                     | X                                                                                                        | <p> 1.4In + 6mA (Type A) <p> 1.4In + 10mA (Type F) <p> 1.4In + 0.4In (Type B)        |
+| High Frequency (1KHz)   | ![alt text](/Pictures/0E.png)  | -                               | -                               | X                                                                     | X                                                                                                        | 0.5 - 1.4 In                           |
+| DC                      | ![alt text](/Pictures/0F.png)  | -                               | -                               | -                                                                     | X                                                                                                        | 0.5 - 2 In                             |
 
 
 * For AC 50 Hz, if IΔn is 30 mA, the trigger must be done between 15-30mA
@@ -117,13 +125,14 @@ Normalized values for IΔn:
 * For DC, only Type B can protect
 
 
-|  Type    | ICON                                                                                                     |  Comments                                                                                                                                                   |   Examples |
-| -------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | 
-| AC       | ![alt text](/Pictures/01.png)                                                                            | <p> General type:  <p> Equipment resistive / capacitive / inductive <p> without electronic component                                                        | Electric Showers <p> Oven <p>  hub <p>  **Tugsten** Light      |
-| A        | ![alt text](/Pictures/02.png)                                                                            | <p> Pulsating are generated by  diode bridge rectifier <p> **Pulsating can have a DC of max 6mA** <p>  ![alt text](/Pictures/09.png) <p> Electronic Components  | Inverters <p>  Leds <p>  PowerSupply Class II <p>  **Induction** Hobs <p> Electric Vehicle (**Type 2**) [Slow]  |
-| F        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)                                      | <p> Frequency Controlled <p>  Variable speed driver                                                                                                         |  Air Acconditioner <p>  Washing machines & dishwasher <p>  Tumble Driers   |
-| B        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)  <p>  ![alt text](/Pictures/03.png)  | <p> For single and 3 Phase equipment                                                                                                                        | Inverter <p> UPS <p> photovoltaic system <p> Lifts <p> escalator <p> welding equipment <p> Electric Vehicle (**Type 3**) [semi - Fast]    |
-
+|  Type    | ICON                                                                                                     |  Comments                                                                                                                                                        |   Examples                                                                                                                                |
+| -------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | 
+| AC       | ![alt text](/Pictures/01.png)                                                                            | <p> General type:  <p> Equipment resistive / capacitive / inductive <p> without electronic component                                                             | Electric Showers <p> Oven <p>  hub <p>  **Tugsten** Light                                                                                 |
+| A        | ![alt text](/Pictures/02.png)                                                                            | <p> Pulsating are generated by  diode bridge rectifier <p> **Pulsating can have a DC of max 6mA** <p>  ![alt text](/Pictures/09.png) <p> Electronic Components   | Inverters <p>  Leds <p>  PowerSupply Class II <p>  **Induction** Hobs <p> Electric Vehicle (**Type 2**) [Slow]                            |
+| F        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)                                      | <p> Frequency Controlled <p>  Variable speed driver                                                                                                              | Air Acconditioner <p>  Washing machines & dishwasher <p>  Tumble Driers                                                                   |
+| B        | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)  <p>  ![alt text](/Pictures/03.png)  | <p> For single and 3 Phase equipment                                                                                                                             | Inverter <p> UPS <p> photovoltaic system <p> Lifts <p> escalator <p> welding equipment <p> Electric Vehicle (**Type 3**) [semi - Fast]    |
+| Bfq      | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)  <p>  ![alt text](/Pictures/03.png)  | Is a V type for max 20KHz                                                                                                                                        |                                                                                                                                           |
+| B+       | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)  <p>  ![alt text](/Pictures/03.png)  | The vendor Eaton have a B type for max 20KHz                                                                                                                     |                                                                                                                                           |
 
 ## Type F / SI : High immunization / Superimmunized
 * Must be tested as Type A
