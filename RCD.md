@@ -52,14 +52,19 @@ This can be Important if the Neutral is broken (30 ppm)
 The sum of L's + N must be 0 (or close to 0)
 
 * What's happen if our instalation doesn't use Neutral?
-  ![alt text](/Pictures/24.png)
+
+![alt text](/Pictures/24.png)
+
 To, the neutral must be connected to the imput N
 
 * Can we use a 3L + N for a 1L + N?
+
 ![alt text](/Pictures/05.png)
+
 Yes, only respect N ans Input output
 BUT, if the RCD is digital, you will need this configuration:
-  ![alt text](/Pictures/25.png)
+
+![alt text](/Pictures/25.png)
 
 
 
@@ -77,7 +82,9 @@ MIN time to Tripping = 40 ms
 | Type S (min) | 0.13s | 0.06s | 0.05s | 0.04s     |
 
 Why 10 ms for G is the minimum?
+
 ![alt text](/Pictures/28.png)
+
 at 50 Hz, is half wave, thus will be a voltage through zero
 
 
@@ -104,8 +111,12 @@ Normalized values for IΔn:
 * 16 / 25 /4 A
 * 63 / 80 / 100 A
 for 40 °C if is more there is a table to calculate the In
+
+
 ### Why 30 mA?
+
 ![alt text](/Pictures/22.png)
+
 [Reference](https://www.eaton.com/content/dam/eaton/products/electrical-circuit-protection/circuit-breakers/xeffect-rccb/eaton-rcd-application-guide-br019003en-en-us.pdf)
 * AC-1 No Perception
 * AC-2 Perception
