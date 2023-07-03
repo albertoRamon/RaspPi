@@ -52,8 +52,8 @@ This can be Important if the Neutral is broken (30 ppm)
 The sum of L's + N must be 0 (or close to 0)
 
 * What's happen if our instalation doesn't use Neutral?
-![alt text](/Pictures/24.png)
 
+![alt text](/Pictures/24.png)
 To, the neutral must be connected to the imput N
 
 * Can we use a 3L + N for a 1L + N?
