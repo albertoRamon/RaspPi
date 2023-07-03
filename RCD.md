@@ -1,5 +1,7 @@
 # RCD (Residual Current Device) /  Differential Circuit Breaker
 
+### References
+* [Eaton - Residual Current Device](https://www.eaton.com/content/dam/eaton/products/electrical-circuit-protection/circuit-breakers/xeffect-rccb/eaton-rcd-application-guide-br019003en-en-us.pdf)
 
 ## Types by protection
 [RCD Classifications](https://electrical-engineering-portal.com/types-of-residual-current-devices-rcd)
@@ -16,27 +18,62 @@
 
 ## How this work
 ![alt text](/Pictures/05.png)
-Tripping Current:
-*  0.5x IΔn don't be triggered 
-*  0.5-1 IΔn ==> uncertainty
-*  1x IΔn must be triggered
+
+Parameters
+* IΔn = Rated Residual Operating Current
+* In  = ???
+* Ic  =  Conditional short-circuit resistance 
+Is the maximum I can support without damage the RCD
+![alt text](/Pictures/26.png)
+
+
+### Tripping Current:
+|            | Action          |
+| ---------- | --------------- |
+| 0-0.5x IΔn | don't be trip   |
+| 0.5-1x IΔn | uncertainty     |
+| =>1x IΔn   | must be trip    |
+
+### Does IΔn depend from the Voltage?
+* In Europe : voltage-independent
+* In America: voltage-dependent
+This can be Important if the Neutral is broken (30 ppm)
+
+### Does the neutral be connected to de RCD?
+![alt text](/Pictures/03.png)
+* In the 1L + N, is clear that yes
+* In the 3L + N, the same
+The sum of L's + N must be 0 (or close to 0)
+
+* What's happen if our instalation doesn't use Neutral?
+![alt text](/Pictures/24.png)
+To, the neutral must be connected to the imput N
+
+* Can we use a 3L + N for a 1L + N?
+![alt text](/Pictures/05.png)
+Yes, only respect N ans Input output
+BUT, if the RCD is digital, you will need this configuration:
+![alt text](/Pictures/25.png)
+
+
 
 ### Types by Response time  (G vs S)
-* Type G: General
-* Type S: Selectivity
+* Type G: General (= no delayed)
+* Type S: Selectivity (= delayed)
 
-|              | 1xIΔn | 2xIΔn | 5xIΔn |
-| ------------ | ----- | ----- | ----- |
-| Type G (max) | 0.30s | 0.15s | 0.04s |
-| Type S (max) | 0.50s | 0.20s | 0.15s |
-| Type S (min) | 0.13s | 0.06s | 0.04s |
+|              | 1xIΔn | 2xIΔn | 5xIΔn |  500A IΔn |
+| ------------ | ----- | ----- | ----- | --------- |
+| Type G (max) | 0.30s | 0.15s | 0.04s | 0.04s     |
+| Type S (max) | 0.50s | 0.20s | 0.15s | 0.15s     |
+| Type S (min) | 0.13s | 0.06s | 0.05s | 0.04s     |
 
 | Type G  |  Type S     |
 | ----------------------------- | --------------------------------- |
 | ![alt text](/Pictures/15.png) | ![alt text](/Pictures/14.png)     |
 
+![alt text](/Pictures/27.png)
 
-### Types by Sensibility (IΔn)
+### Types by Sensibility (IΔn) / Normalized values for IΔn
 
 | Sensibility  | IΔn        |
 | ------------ | ---------- |
@@ -45,6 +82,20 @@ Tripping Current:
 | Normal       | 100-300 mA |
 | Low          | 0.5 - 1 A  |
 
+Normalized values for IΔn:
+* 10 / 30 / 300 / 500 mA 
+* 1 A
+
+### Normalized values for In:
+* 16 / 25 /4 A
+* 63 / 80 / 100 A
+
+### Why 30 mA?
+![alt text](/Pictures/22.png)
+[Reference](https://www.eaton.com/content/dam/eaton/products/electrical-circuit-protection/circuit-breakers/xeffect-rccb/eaton-rcd-application-guide-br019003en-en-us.pdf)
+* AC-1 No Perception
+* AC-2 Perception
+* AC-3 Strong involuntary muscle contractions
 
 ## Types by Wave form
 
@@ -82,7 +133,7 @@ Tripping Current:
 | ------------------------------- |  
 | ![alt text](/Pictures/08.png)   |
 
-###  Fugas naturales / false positives / 
+###  Fugas naturales / false positives  
 Residual Current that always exits, even without isolation fault 
 
 |            Pics                     |  Comments      |
@@ -112,7 +163,7 @@ Residual Current that always exits, even without isolation fault
 * Important when we have 'n' RCD in Series (RCD Chained)
 * Simbol: ![alt text](/Pictures/06.png)
 
-Conditions:
+Conditions for full selectivity:
 * Amperometric selectivity: upstream RCD must have 2x IΔn than downstream
 	See [Types by Sensibility](https://github.com/albertoRamon/RaspPicoIOT/blob/main/RCD.md#types-by-sensibility-i%CE%B4n)
 * Selectivity Cronometrica: upstream RCD must have a response time > downstream
@@ -134,6 +185,7 @@ Solution:
 2. Type S (upstream)
 3. Residual current protection relay
 [Schenaider RH99M](https://www.se.com/uk/en/product/56173/residual-current-protection-relay-vigirex-rh99m-30-ma-to-30-a-220-240-vac-50-60-hz-din-rail-mounting/)
+[Circuitor Type B residual current protection](https://circutor.com/en/products/protection-and-control/residual-current-protection/type-b-residual-current-protection/product/P11951./)
 
 ### Σ Residual Current in downstream level
 ![alt text](/Pictures/16.png)
