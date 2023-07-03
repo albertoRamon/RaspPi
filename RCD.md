@@ -16,13 +16,19 @@
 * PRCD (Portable Residual Current Device): Similar to the previous [Link](https://www.google.com/search?q=*+PRCD+(Portable+Residual+Current+Device)%3A+RCD&tbm=isch&ved=2ahUKEwiPy_aQteT_AhVXmicCHV__AQEQ2-cCegQIABAA&oq=*+PRCD+(Portable+Residual+Current+Device)%3A+RCD&gs_lcp=CgNpbWcQA1DSCljSCmCXGGgAcAB4AIABRIgBfZIBATKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=YlebZI-SCte0nsEP3_6HCA&bih=919&biw=958&rlz=1C1GCEA_enGB995GB995)
 * ELCB (Earth-leakage circuit breaker): Is the old name for RCCB
 
+|  Type      | Symbol                          |
+| ---------- | ------------------------------- |
+| RCCB       | ![alt text](/Pictures/30.png)   |
+| RCBO       | ![alt text](/Pictures/31.png)   |
+
+
 ## How this work
 ![alt text](/Pictures/05.png)
 
 Parameters
 * IΔn = Rated Residual Operating Current
-* In  = ???
-* Ic  =  Conditional short-circuit resistance 
+* In  = Rated current RCCB
+* Ic  = Conditional short-circuit resistance 
 Is the maximum I can support without damage the RCD
 ![alt text](/Pictures/26.png)
 
@@ -97,7 +103,7 @@ Normalized values for IΔn:
 ### Normalized values for In:
 * 16 / 25 /4 A
 * 63 / 80 / 100 A
-
+for 40 °C if is more there is a table to calculate the In
 ### Why 30 mA?
 ![alt text](/Pictures/22.png)
 [Reference](https://www.eaton.com/content/dam/eaton/products/electrical-circuit-protection/circuit-breakers/xeffect-rccb/eaton-rcd-application-guide-br019003en-en-us.pdf)
@@ -112,7 +118,7 @@ Normalized values for IΔn:
 | ICON  RCD               | N.A                            | ![alt text](/Pictures/01.png)   | ![alt text](/Pictures/02.png)   | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)   | <p> ![alt text](/Pictures/02.png) <p> ![alt text](/Pictures/04.png)  <p>  ![alt text](/Pictures/03.png)  | N.A.                                   |
 | Sinusoidal AC  50Hz     | ![alt text](/Pictures/0A.png)  | X                               | X                               | X                                                                     | X                                                                                                        | 0.5 - 1 IΔn                            |
 | Pulsating  50Hz         | ![alt text](/Pictures/0B.png)  | -                               | X                               | X                                                                     | X                                                                                                        | 0.35 -1.4 IΔn                          |
-| Pulsating Rectificada   | ![alt text](/Pictures/0C.png)  | -                               | X                               | X                                                                     | X                                                                                                        | <p> 0.25 - 1.4 In (90º)  <p>0.11 - 1.4 In (135º)     |
+| Pulsating Rectificada   | ![alt text](/Pictures/0C.png)  | -                               | X                               | X                                                                     | X                                                                                                        | <p> 0.25 - 1.4 In (90º)  <p>0.11 - 1.4 In (135º)                                     |
 | Pulsating + DC          | ![alt text](/Pictures/0D.png)  | -                               | X                               | X                                                                     | X                                                                                                        | <p> 1.4In + 6mA (Type A) <p> 1.4In + 10mA (Type F) <p> 1.4In + 0.4In (Type B)        |
 | High Frequency (1KHz)   | ![alt text](/Pictures/0E.png)  | -                               | -                               | X                                                                     | X                                                                                                        | 0.5 - 1.4 In                           |
 | DC                      | ![alt text](/Pictures/0F.png)  | -                               | -                               | -                                                                     | X                                                                                                        | 0.5 - 2 In                             |
