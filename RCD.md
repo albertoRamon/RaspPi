@@ -220,3 +220,17 @@ The problem in this scenario is:
 * them, the sum of all bottom level is 60mA
 * For the upstream RCD 60 mA of permanent residual current will produce spurious trip
 * The solution: RCD upstream level IΔn = 300 mA
+
+
+## RCD Verifications / Measurements
+* er IEC 60364-6: Verifications (2007)
+* [Eaton - Residual Current Device (Pag 32)](https://www.eaton.com/content/dam/eaton/products/electrical-circuit-protection/circuit-breakers/xeffect-rccb/eaton-rcd-application-guide-br019003en-en-us.pdf)
+
+
+|  Type                | Symbol                          |
+| -------------------- | ------------------------------- |
+| Loop Impedance       | ![alt text](/Pictures/33.png)   |
+| Tripping  current    | ![alt text](/Pictures/34.png)   |
+
+* Loop: check the trip and no trip 
+* Tripping  current: meause when IΔn will be tripped
