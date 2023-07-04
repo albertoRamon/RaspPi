@@ -14,5 +14,5 @@
  
 |  Type   | Diagram                       |
 | ------- | ------------------------------- |
-| 1P      | ![alt text](/Pictures/35.png)   |
-| 1P+N    | ![alt text](/Pictures/36.png)   |
+| 1P      | ![alt text](/Pictures/36.png)   |
+| 1P+N    | ![alt text](/Pictures/35.png)   |
