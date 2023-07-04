@@ -159,7 +159,7 @@ for 40 °C if is more there is a table to calculate the In
 | ------------------------------- |  
 | ![alt text](/Pictures/08.png)   |
 
-###  Fugas naturales / false positives  
+###  Fugas naturales  
 Residual Current that always exits, even without isolation fault 
 
 |            Pics                     |  Comments      |
@@ -168,7 +168,11 @@ Residual Current that always exits, even without isolation fault
 | ![alt text](/Pictures/11.png)       | Must have capatitator filter between L and E: <p> thus, create a residual current permanent |
 | ![alt text](/Pictures/12.png)       | between 0.5 - 1 mA |
 
-### spurious trip / unwanted Tripping  [Disparo intenspestivo] / false positives 
+### Spurious trip [Disparo intenspestivo] [disparos por simpatia] / false positives 
+* [SE_disparos por simpatia](https://www.se.com/es/es/faqs/FAQ000225847/)  Falta !!
+* [Échame un cable: ¿Qué son los disparos intempestivos de los interruptores diferenciales, y cómo podemos evitarlos?](https://blogespanol.se.com/hogares/2022/02/02/echame-un-cable-que-son-los-disparos-intempestivos-de-los-interruptores-diferenciales-y-como-podemos-evitarlos/)  falta !!
+
+
 
 |  The sum of all must be < 30% IΔn  in any case            |
 | --------------------------------------------------------- |  
@@ -182,9 +186,10 @@ Residual Current that always exits, even without isolation fault
 
 ## Type S (Time - Delayed) / Selectivity (Discrimination) / Vertical Selectivity / Coordination
 
-[Video: Selectividad diferencial vertical](https://www.youtube.com/watch?v=8oNrytLkZLY)
-[Circuitor: The 3 essential rules for selectivity in earth leakage protection](https://circutor.com/en/articles/the-3-essential-rules-for-selectivity-in-earth-leakage-protection/)
-
+* [Video: Selectividad diferencial vertical](https://www.youtube.com/watch?v=8oNrytLkZLY)
+* [Circuitor: The 3 essential rules for selectivity in earth leakage protection](https://circutor.com/en/articles/the-3-essential-rules-for-selectivity-in-earth-leakage-protection/)
+* [Coordination of residual current protective devices](https://www.electrical-installation.org/enwiki/Coordination_of_residual_current_protective_devices)
+* [Selectivity of Residual Current Devices (RCDs)](https://www.electrical-installation.org/enwiki/Selectivity_of_Residual_Current_Devices_(RCDs)) falta !!
 
 * Important when we have 'n' RCD in Series (RCD Chained)
 * Simbol: ![alt text](/Pictures/06.png)
@@ -243,25 +248,26 @@ The problem in this scenario is:
 Must be done after the RCD & RCD disconnected
 
 ## Incorrect Connection: Neutral  
-|  Example                       | Comment                         |
-| ------------------------------ | ------------------------------- |
-|![alt text](/Pictures/38.png)   |                                 |
-|![alt text](/Pictures/39.png)   |                              |
-|![alt text](/Pictures/40.png)   |                                 |
-|![alt text](/Pictures/41.png)   |                              |
+|  Example                       | Comment                                   |
+| ------------------------------ | ----------------------------------------- |
+|![alt text](/Pictures/38.png)   | The feeding for L and N must be the same  |
+|![alt text](/Pictures/39.png)   | The neutral cant be cros affter the RCD   |
+|![alt text](/Pictures/40.png)   | The neutral cant be cros affter the RCD   |
+|![alt text](/Pictures/41.png)   |   Neutral Block per RCD                   |
 
 
 ## Incorrect Connection: Feeding
 
 * [Scheneider 1](https://www.se.com/za/en/faqs/FA401160/)
 * [Scheneider 2](https://www.se.com/es/es/faqs/FA383193/)
-* []()
-* []()
 
-By default RCCB can be feeded from **Top ADN bottom**
+|  * By default RCCB can be feeded from **Top ADN bottom**    | 
+| ----------------------------------------------------------- |
 
-Some of them like Resi9 are indicate are compatible with bottom [also]
-thus are compaibles with XXX
+
+* Some of them like Resi9 are indicate are compatible with bottom [also]
+* thus are compaibles with XXX
+
 ![alt text](/Pictures/43.png) 
 
 #### Exception: Self-Reclosing /  [Auto-rearme)
@@ -275,3 +281,4 @@ These have a sensor (wired externally or internnaly)
 |  Circuitor                     | Schenaider                      |
 | ------------------------------ | ------------------------------- |
 |![alt text](/Pictures/42.png)   | ![alt text](/Pictures/44.png)   |
+
