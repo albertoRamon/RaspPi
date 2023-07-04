@@ -16,10 +16,10 @@
 * PRCD (Portable Residual Current Device): Similar to the previous [Link](https://www.google.com/search?q=*+PRCD+(Portable+Residual+Current+Device)%3A+RCD&tbm=isch&ved=2ahUKEwiPy_aQteT_AhVXmicCHV__AQEQ2-cCegQIABAA&oq=*+PRCD+(Portable+Residual+Current+Device)%3A+RCD&gs_lcp=CgNpbWcQA1DSCljSCmCXGGgAcAB4AIABRIgBfZIBATKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=YlebZI-SCte0nsEP3_6HCA&bih=919&biw=958&rlz=1C1GCEA_enGB995GB995)
 * ELCB (Earth-leakage circuit breaker): Is the old name for RCCB
 
-|  Type      | Symbol                          |
-| ---------- | ------------------------------- |
-| RCCB       | ![alt text](/Pictures/30.png)   |
-| RCBO       | ![alt text](/Pictures/31.png)   |
+|  Type      | Symbol                          | Symbol                          |
+| ---------- | ------------------------------- | ------------------------------- |
+| RCCB       | ![alt text](/Pictures/30.png)   | ![alt text](/Pictures/45.png)   |
+| RCBO       | ![alt text](/Pictures/31.png)   | ![alt text](/Pictures/46.png)   |
 
 
 ## How this work
@@ -253,7 +253,7 @@ Must be done after the RCD & RCD disconnected
 |![alt text](/Pictures/38.png)   | The feeding for L and N must be the same  |
 |![alt text](/Pictures/39.png)   | The neutral cant be cros affter the RCD   |
 |![alt text](/Pictures/40.png)   | The neutral cant be cros affter the RCD   |
-|![alt text](/Pictures/41.png)   |   Neutral Block per RCD                   |
+|![alt text](/Pictures/41.png)   | 1  Neutral Block per RCD                  |
 
 
 ## Incorrect Connection: Feeding
