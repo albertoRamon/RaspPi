@@ -2,6 +2,8 @@
 
 ### References
 * [Eaton - Residual Current Device](https://www.eaton.com/content/dam/eaton/products/electrical-circuit-protection/circuit-breakers/xeffect-rccb/eaton-rcd-application-guide-br019003en-en-us.pdf)
+* [ABB - Protection against earth faults with Residual Current Devices](https://library.e.abb.com/public/9f0e99de3bc740288bc41ab95667f72f/RCD%20Technical%20Guide%20EN.pdf)
+
 
 ## Types by protection
 [RCD Classifications](https://electrical-engineering-portal.com/types-of-residual-current-devices-rcd)
@@ -9,7 +11,7 @@
 * RCBO (Residual Current Circuit-Breaker with protection against overload): With overload protection
    * RCBO = RCCB + MCB
    * I.E [Schneider Multi9 RCBO](https://www.se.com/uk/en/product-range/1104-multi-9/12367803577-residual-current-devices-rcd/?N=1339672414) OR [CNC RCBO](https://cnc-official.com/search?type=product&options%5Bprefix%5D=last&options%5Bunavailable_products%5D=last&q=RCBO)
-* MRCD (Modular Residual Current Device): Have a toridal to measure Current [Link](https://www.bender.de/fileadmin/content/Products/f/e/MRCD_Fly_en.pdf)
+* MRCD (Modular Residual Current Device): Have a toroidal to measure Current [Link](https://www.bender.de/fileadmin/content/Products/f/e/MRCD_Fly_en.pdf)
 * RCM (Residual Current Monitor): 
 * CBR (Circuit Breaker incorpoorating Residual Current Proctection)
 * SRCD (Socket-Outlet incorpoorating a Residual Current Device): Is a plug with RCD [Link](https://www.google.com/search?q=srcd+RCD&tbm=isch&ved=2ahUKEwiWieKKteT_AhUmsCcCHbvYAe0Q2-cCegQIABAA&oq=srcd+RCD&gs_lcp=CgNpbWcQAzoHCAAQigUQQzoFCAAQgAQ6BggAEAUQHjoGCAAQBxAeOgcIABAYEIAEUOkBWJ8HYKgJaABwAHgAgAFLiAG8AZIBATOYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=VVebZNaKD6bgnsEPu7GH6A4&bih=919&biw=958&rlz=1C1GCEA_enGB995GB995)
@@ -29,9 +31,10 @@ Parameters
 * IΔn = Rated Residual Operating Current
 * In  = Rated current RCCB
 * Ic  = Conditional short-circuit resistance 
-Is the maximum I can support without damage the RCD
+Is the maximum I can support without damage the RCD. 
 ![alt text](/Pictures/26.png)
-
+* Im = Break Capacity
+Usually 1kA
 
 ### Tripping Current:
 |            | Action          |
@@ -43,7 +46,11 @@ Is the maximum I can support without damage the RCD
 ### Does IΔn depend from the Voltage?
 * In Europe : voltage-independent
 * In America: voltage-dependent
-This can be Important if the Neutral is broken (30 ppm)
+
+This can be Important if the Neutral is broken (30 ppm):
+* Voltage-independent
+* Voltage-dependent
+
 
 ### Does the neutral be connected to de RCD?
 ![alt text](/Pictures/23.png)
@@ -66,7 +73,10 @@ BUT, if the RCD is digital, you will need this configuration:
 
 ![alt text](/Pictures/25.png)
 
+* Position of the neutral, by default Right, but there are exceptions
+If you put Neutral on left you can use standard Bus Bar RCD to MCB
 
+![alt text](/Pictures/51.png)
 
 ### Types by Response time  (G vs S)
 * Type G: General (= no delayed)
@@ -172,8 +182,6 @@ Residual Current that always exits, even without isolation fault
 * [SE_disparos por simpatia](https://www.se.com/es/es/faqs/FAQ000225847/)  Falta !!
 * [Échame un cable: ¿Qué son los disparos intempestivos de los interruptores diferenciales, y cómo podemos evitarlos?](https://blogespanol.se.com/hogares/2022/02/02/echame-un-cable-que-son-los-disparos-intempestivos-de-los-interruptores-diferenciales-y-como-podemos-evitarlos/)  falta !!
 
-
-
 |  The sum of all must be < 30% IΔn  in any case            |
 | --------------------------------------------------------- |  
 | Type F will detect random peak avoinding spurious trip    |
@@ -190,6 +198,7 @@ Residual Current that always exits, even without isolation fault
 * [Circuitor: The 3 essential rules for selectivity in earth leakage protection](https://circutor.com/en/articles/the-3-essential-rules-for-selectivity-in-earth-leakage-protection/)
 * [Coordination of residual current protective devices](https://www.electrical-installation.org/enwiki/Coordination_of_residual_current_protective_devices)
 * [Selectivity of Residual Current Devices (RCDs)](https://www.electrical-installation.org/enwiki/Selectivity_of_Residual_Current_Devices_(RCDs)) falta !!
+* [ABB - Protection against earth faults with Residual Current Devices (Pag 63)](https://library.e.abb.com/public/9f0e99de3bc740288bc41ab95667f72f/RCD%20Technical%20Guide%20EN.pdf)
 
 * Important when we have 'n' RCD in Series (RCD Chained)
 * Simbol: ![alt text](/Pictures/06.png)
@@ -201,6 +210,10 @@ Conditions for full selectivity:
 	See [Types by Response time  (G vs S)](https://github.com/albertoRamon/RaspPicoIOT/blob/main/RCD.md#types-by-response-time--g-vs-s)
 * Type selectivity: upstream must be the same or higer type than downstream (AC < A < F < B)
 ![alt text](/Pictures/21.png)
+
+Conditions for partial selectivity:
+* Amperometric selectivity: <the same>
+The downstream RCD will be Trpped only: IΔn downstream < IΔn < 0.5 IΔn upstream
 
 ### If you have a chain of 2 RCD
 1. Type G (downstream)
