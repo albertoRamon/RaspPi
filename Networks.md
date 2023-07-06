@@ -22,7 +22,7 @@ Define relationship of expose conductors & Earth:
 
 |  TT                                 | TN - S                          | TN - C                          |
 | ----------------------------------- | ------------------------------- | ------------------------------- |
-|  ![alt text](/Pictures/48.png)      | ![alt text](/Pictures/49.png)   | ![alt text](/Pictures/50.png)   |
+|      | ![alt text](/Pictures/49.png)   | ![alt text](/Pictures/50.png)   |
 | the neutral is usually distributed  | N and PE are separated          | N and PE are the same           |
 | In America                          | In Europe                       |                                 |
 
