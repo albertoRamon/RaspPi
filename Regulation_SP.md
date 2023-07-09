@@ -49,7 +49,7 @@
 
 ## Electrificacion Basica Grado 1
 
- ![alt text](/Pictures/56.png)
+ ![alt text](/Pictures/57.png)
 
 | Circuit      | Use                                       | PIA     | Max Sockets  | Wire    | Socket         | Wire Cover   | Max per Socket  |
 | ------------ | ----------------------------------------- | ------- | ------------ | ------- | -------------- | ------------ | --------------- |
@@ -61,19 +61,24 @@
 
 
 ### C4
-Can be splitted in 3
+Can be splitted in 3 circuits
+ ![alt text](/Pictures/58.png)
+
 | Circuit    |  Use               | Comment    | Comment | 
 | ---------- |  ---------------- | ---------- | ------- | 
 | C4.1       |  Lavadora         | 16A        | 2,5 mm2 | 
 | C4.2       |  Lavavajillas     | 16A        | 2,5 mm2 | 
 | C4.2       |  Termo electrico  | 16A        | 2,5 mm2 | 
 
-
+### Does Electrificacion Basica Spplited need > 1 RDD?
+can have only 1 RCD, because C4.1, C4.2 & C4.3 counts as 1 Circuit
+If you want, you can put > 1 RCD and keeps as Electrificacion Basica
 
 
 # Electrificacion Elevada / Grado 2
 
- ![alt text](/Pictures/57.png)
+ ![alt text](/Pictures/56.png)
+ This is Grado 2, because there is a dryer (C10)
 
 | Circuit      | Use                    | PIA     |  Max Sockets  |Wire    | Socket         | Wire Cover   | Max per Socket  | Max per circuit    |
 | ------------ | ---------------------- | ------- |  ------------ |------- | -------------- | ------------ | --------------- | ------------------ |
@@ -90,25 +95,30 @@ Can be splitted in 3
 
 # Wires
 6mm2 = 25A
+16mm2 = 40A
 
 # Questions
 
 #### What is first IGA or the main RCD ?
 The IGA then Main RCD
 
-### Calculate IGA (In)
+### Calculate IGA (In) / What must suppot more current IGA or the main RCD ?
 IGA (In) protect the Input and Output wire. Thus.
-* I max supported by wire  >> IGA (In)
-* The mm2 of IGA Input = Output (And the same for Input / Output Main RCD)
+==> I max supported by Input wire  >> IGA (In) to avoid burn the Wire.
 
 
+| In Electrificacion Basica  (No spplited)     | In Electrificacion Elevada  or Basic spplited       |
+| -------------------------------------------- | --------------------------------------------------  |
+| 1 Main RCD                                   | >1 Main RCD                                         |
+| The mm2 of IGA Input = Output                | The mm2 of IGA Input >= Output                      |
+| Main RCD, must support **IGA In or more**    | RCD, << IGA In                                      |
 
-#### What must suppot more current IGA or the main RCD ?
-The current is limited by the IGA
-Thus the Main RCD, must support **IGA In or more**
+
+Thus the 
 
 #### How many circuist can protect a RCD ?
 Max 5 Circuits (= PIA)
-C4 count as 1 even if is spplited
+But, C4 spplited count as 1 even if is spplited
+Thus in this scenario could have 7 circuits and **1 RCD**
 
 
