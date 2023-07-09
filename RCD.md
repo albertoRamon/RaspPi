@@ -32,8 +32,10 @@ Parameters
 * In  = Rated current RCCB [Corriente Nominal]
 * Inc  = Conditional short-circuit resistance [Corriente Nominal de Cortocicuito]
 Is the maximum I can support without damage the RCD. 
+
 ![alt text](/Pictures/26.png)
 * Im = Break Capacity [Capacidad Nominal de Apertura y Ruptura]
+
 Usually 1kA
 If Current is >Im the contact can't be open
 
