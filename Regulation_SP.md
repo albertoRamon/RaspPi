@@ -1,6 +1,7 @@
 
-### References7
+### References:
 * [Cómo Cablear un Cuadro Eléctrico de una vivienda según el reglamento electrotécnico de baja tensión](https://www.youtube.com/watch?v=DFk9neuSgxE)
+* [Ejercicio resuelto de PREVISIÓN DE CARGAS](https://www.youtube.com/watch?v=Y03DsHHjwng) Falta
 
 ## Protections
 * Interruptor Control Potencia (ICP) (Optional*)
@@ -122,3 +123,16 @@ But, C4 spplited count as 1 even if is spplited
 Thus in this scenario could have 7 circuits and **1 RCD**
 
 
+# Infrastructura de Recarga de Vehiculos Electricos (IRVE)
+* [Ejercicio resuelto de PREVISIÓN DE CARGAS - Min17](https://www.youtube.com/watch?v=Y03DsHHjwng) Falta
+
+* 3680W per parking spot
+* 10% of the parking spot
+* Factor Simultaneidad (Fs) = 1.0  with SPL
+   Factor Simultaneidad (Fs) = 0.3  without SPL
+   
+ ```  
+ 60 Parking Spot * 10% = 6
+ with SPL, thus 
+ IRVE (W) = 6Parking Spot * 0.3Fs * 3680W = 6624W
+ ```
