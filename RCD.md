@@ -31,7 +31,6 @@ Parameters
 * IΔn = Rated Residual Operating Current [Corriente Nominal de disparo]
 * In  = Rated current RCCB [Corriente Nominal]
 * Inc  = Conditional short-circuit resistance [Corriente Nominal de Cortocicuito]
-
    Is the maximum I can support without damage the RCD. 
 
 ![alt text](/Pictures/26.png)

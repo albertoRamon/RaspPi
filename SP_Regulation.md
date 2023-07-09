@@ -1,14 +1,16 @@
 
 ### References:
-* [Cómo Cablear un Cuadro Eléctrico de una vivienda según el reglamento electrotécnico de baja tensión](https://www.youtube.com/watch?v=DFk9neuSgxE)
-* [Ejercicio resuelto de PREVISIÓN DE CARGAS](https://www.youtube.com/watch?v=Y03DsHHjwng) Falta
+* [Guía técnica ITC-BT-25, The oficial](https://www.boe.es/biblioteca_juridica/codigos/abrir_pdf.php?fich=326_Reglamento_electrotecnico_para_baja_tension_e_ITC.pdf)
+* [Reglamento Electrotécnico para Baja Tensión 7.ª edición](https://www.amazon.es/Reglamento-Electrot%C3%A9cnico-para-Tensi%C3%B3n-edici%C3%B3n/dp/8426733719/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1F7P3TZY71SDK&keywords=Reglamento+Electrot%C3%A9cnico+Para+Baja+Tensi%C3%B3n&qid=1688934993&s=books&sprefix=reglamento+electrot%C3%A9cnico+para+baja+tensi%C3%B3n%2Cstripbooks%2C48&sr=1-1)
+* [Amazon Book: Instalador electricista autorizado. Libro de prácticas (SIN COLECCION)](https://www.amazon.es/Instalador-electricista-autorizado-Libro-pr%C3%A1cticas/dp/8428328668/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2B4VI24EHDRRD&keywords=Instalador+electricista+autorizado.+Libro+de+pr%C3%A1cticas&qid=1688934336&s=books&sprefix=instalador+electricista+autorizado.+libro+de+pr%C3%A1cticas%2Cstripbooks%2C135&sr=1-1)
 
-## Protections
+# Netowrk Protections
 * Interruptor Control Potencia (ICP) (Optional*)
    * Prevents us from consuming more power than contracted with the electric provider
    * Is optional.  Algunos contadores telegestionados ya lo llevan integrado
    * Must be sealed and checked by electrical provider
    * Thus, must be in a separate enclosure
+   * Min 10A and +5A (10, 15, 20, 25 ...63A)
    
 * Interruptor General Automatico (IGA) [es un magetoterminco]
    * Protect our distribution panel from overcurrents
@@ -18,7 +20,8 @@
    * Protect **one** circuit
    
 * Protector contra sobretensiones (PCS) (Optional*)
-   * Protect us from **External** over currenct
+   * Protect us from **External** over current
+   * **Installed between IGA & Main RCD**
    * Transitorias (Rayos, Microsegundos)
       * Deriban a tierra, no hay tiempo de abrir circuito
       
@@ -37,7 +40,12 @@
  
 * Interruptor Differecial  (ID)
 
-# Electrificacion
+
+# Network element
+* [Ejercicio resuelto de PREVISIÓN DE CARGAS](https://www.youtube.com/watch?v=Y03DsHHjwng) Falta
+
+# Electrificaciones
+* [Instalaciones ELÉCTRICAS DOMICILIARIAS](https://www.youtube.com/playlist?list=PL54-5yiMdV8FYDGRnyAfPefKPnuhqPtuQ)
 
 | Electrificacion  | Potencia   | IGA   | 
 | ---------------- | ---------- | ----- | 
@@ -52,26 +60,26 @@
 
  ![alt text](/Pictures/57.png)
 
-| Circuit      | Use                                       | PIA     | Max Sockets  | Wire    | Socket         | Wire Cover   | Max per Socket  |
-| ------------ | ----------------------------------------- | ------- | ------------ | ------- | -------------- | ------------ | --------------- |
-| Circuit C1   | Iluminacion                               |  10A    | 30           | 1,5 mm2 |  Punto de luz  | 16 mm2       |   200W          |
-| Circuit C2   | Toma uso general y grigorifico            |  16A    | 20           | 2,5 mm2 |  16A 2P+T      | 20 mm2       | 3.450W          |
-| Circuit C3   | Cocina y horno                            |  25A    | 2            |  6  mm2 |  25A 2P+T      | 25 mm2       | 5.400W          |
-| Circuit C4 * | Lavadora, Lavavajillas y termo electrico  |  20A    | 3            |  4  mm2 |  16A 2P+T      | 20 mm2       | 3.450W          |
-| Circuit C5   | Tomas de corriente bano y cocina          |  16A    | 6            | 2,5 mm2 |  16A 2P+T      | 20 mm2       | 3.450W          |
+| Circuit      | Use                                                   | PIA     | Max Sockets  | Wire    | Socket         | Wire Cover   | Max per Socket  |
+| ------------ | ----------------------------------------------------- | ------- | ------------ | ------- | -------------- | ------------ | --------------- |
+| Circuit C1   | Iluminacion                                           |  10A    | 30           | 1,5 mm2 |  Punto de luz  | 16 mm2       |   200W          |
+| Circuit C2   | Tomas [enchufes] uso general +frigorifico +Extractor  |  16A    | 20           | 2,5 mm2 |  16A 2P+T      | 20 mm2       | 3.450W          |
+| Circuit C3   | Cocina y horno                                        |  25A    | 2            |  6  mm2 |  25A 2P+T      | 25 mm2       | 5.400W          |
+| Circuit C4 * | Lavadora, Lavavajillas y termo electrico              |  20A    | 3            |  4  mm2 |  16A 2P+T      | 20 mm2       | 3.450W          |
+| Circuit C5   | Tomas [enchufes] bano y cocina                        |  16A    | 6            | 2,5 mm2 |  16A 2P+T      | 20 mm2       | 3.450W          |
 
 
 ### C4
 Can be splitted in 3 circuits
  ![alt text](/Pictures/58.png)
 
-| Circuit    |  Use               | Comment    | Comment | 
-| ---------- |  ---------------- | ---------- | ------- | 
-| C4.1       |  Lavadora         | 16A        | 2,5 mm2 | 
-| C4.2       |  Lavavajillas     | 16A        | 2,5 mm2 | 
-| C4.2       |  Termo electrico  | 16A        | 2,5 mm2 | 
+| Circuit    |  Use              | Comment    | Comment | Wire Cover   |
+| ---------- |  ---------------- | ---------- | ------- | ------------ |
+| C4.1       |  Lavadora         | 16A        | 2,5 mm2 | 20 mm2       |
+| C4.2       |  Lavavajillas     | 16A        | 2,5 mm2 | 20 mm2       |
+| C4.2       |  Termo electrico  | 16A        | 2,5 mm2 | 20 mm2       |
 
-### Does Electrificacion Basica Spplited need > 1 RDD?
+#### Q: Does Electrificacion Basica Spplited need > 1 RDD?
 can have only 1 RCD, because C4.1, C4.2 & C4.3 counts as 1 Circuit
 If you want, you can put > 1 RCD and keeps as Electrificacion Basica
 
@@ -98,12 +106,30 @@ If you want, you can put > 1 RCD and keeps as Electrificacion Basica
 6mm2 = 25A
 16mm2 = 40A
 
+Writting format: 
+```
+2x1,5+1,5
+```
+* x2 of 1.5 (Line and Neutral)
+* x1 of 1,5 (Earth)
+
+# Circuit C11: Automatizacion 
+* [Cuadro eléctrico *VIVIENDA con DOMÓTICA](https://www.youtube.com/watch?v=PMtxtIGPhxc&t=344s)
+
+#### Use C11 involves Electrificacion Elevada ?
+NO (is an exception), if they control the cirtcuits that belongs to Electrificacion Basic
+BUT involve a 2nd RCD, for sure, because we will have > 5 circuits
+
+
 # Questions
 
-#### What is first IGA or the main RCD ?
+#### Q: What is first IGA or the main RCD ?
 The IGA then Main RCD
+The RCD doesn't detect / breack on over current
+(RCD In doen't means that will open)
+Thus, the IGA must protect the RCD
 
-### Calculate IGA (In) / What must suppot more current IGA or the main RCD ?
+#### Q: Calculate IGA (In) / What must suppot more current IGA or the main RCD ?
 IGA (In) protect the Input and Output wire. Thus.
 ==> I max supported by Input wire  >> IGA (In) to avoid burn the Wire.
 
@@ -117,7 +143,7 @@ IGA (In) protect the Input and Output wire. Thus.
 
 Thus the 
 
-#### How many circuist can protect a RCD ?
+#### Q: How many circuist can protect a RCD ?
 Max 5 Circuits (= PIA)
 But, C4 spplited count as 1 even if is spplited
 Thus in this scenario could have 7 circuits and **1 RCD**
@@ -125,7 +151,9 @@ Thus in this scenario could have 7 circuits and **1 RCD**
 
 # Infrastructura de Recarga de Vehiculos Electricos (IRVE)
 * [Ejercicio resuelto de PREVISIÓN DE CARGAS - Min17](https://www.youtube.com/watch?v=Y03DsHHjwng) Falta
-
+*  ITC-BT-52
+*  ITC-BT-10
+ 
 * 3680W per parking spot
 * 10% of the parking spot
 * Factor Simultaneidad (Fs) = 1.0  with SPL
