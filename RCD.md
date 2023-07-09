@@ -28,13 +28,14 @@
 ![alt text](/Pictures/05.png)
 
 Parameters
-* IΔn = Rated Residual Operating Current
-* In  = Rated current RCCB
-* Ic  = Conditional short-circuit resistance 
+* IΔn = Rated Residual Operating Current [Corriente Nominal de disparo]
+* In  = Rated current RCCB [Corriente Nominal]
+* Inc  = Conditional short-circuit resistance [Corriente Nominal de Cortocicuito]
 Is the maximum I can support without damage the RCD. 
 ![alt text](/Pictures/26.png)
-* Im = Break Capacity
+* Im = Break Capacity [Capacidad Nominal de Apertura y Ruptura]
 Usually 1kA
+If Current is >Im the contact can't be open
 
 ### Tripping Current:
 |            | Action          |
