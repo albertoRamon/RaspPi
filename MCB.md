@@ -18,10 +18,10 @@
 
 | Example                         | Meaning                                                 |
 | ------------------------------- | ------------------------------------------------------- |
-| ![alt text](/Pictures/62.png)   | C10   <p> Curve C <p> In =10A  <p> XXX=6KA   <p> 1P+1   |
-| ![alt text](/Pictures/63.png)   | iC60H <p> Curve C <p> In =10A  <p> XXX=6KA              |
-| ![alt text](/Pictures/64.png)   | C32   <p> Curve C <p> In =32A  <p> XXX=4.5KA <p> 1P+1   |
-| ![alt text](/Pictures/65.png)   | B32   <p> Curve B <p> In =32A  <p> XXX=6KA <p> 1P+1   |
+| ![alt text](/Pictures/62.png)   | <p>C10:   <p> Curve C <p> In =10A  <p> XXX=6KA   <p> 1P+1   |
+| ![alt text](/Pictures/63.png)   | <p>iC60H: <p> Curve C <p> In =10A  <p> XXX=6KA              |
+| ![alt text](/Pictures/64.png)   | <p>C32:   <p> Curve C <p> In =32A  <p> XXX=4.5KA <p> 1P+1   |
+| ![alt text](/Pictures/65.png)   | <p>B32:   <p> Curve B <p> In =32A  <p> XXX=6KA <p> 1P+1   |
 
 ## How this work
 * Sort-circuit: Magnetic
