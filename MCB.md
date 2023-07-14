@@ -46,14 +46,20 @@ The maximum size of short-circuit current that can be handled.
 
 
 # MCB + Transitorias
-### Transitorias (Rayos, Microsegundos)
-* Deriban a tierra, no hay tiempo de abrir circuito
+* [2/3 PROTECCIÓN frente a SOBRETENSIONES permanentes y transitorias combinado con IGA](https://www.youtube.com/watch?v=NPNpR61kkC4&list=PL54-5yiMdV8FYDGRnyAfPefKPnuhqPtuQ&index=24)
+* [Schneider Combi SPU 1603](https://www.se.com/il/en/product/16301/combi-spu-circuit-breaker-with-integrated-overvoltage-protection-1p-+-n-25a/)
+
+
+### (MTU) Transitorias 
+* Rayos, Microseconds
+* Thus, derived to earth, there is no time to break the MCB
    ![alt text](/Pictures/18.png)
       
-* Internally uses a Varistor: cuando el voltaje es muy alto la resistencia disminuya
+* Internally uses a Varistor: The resistence is lower when the voltege is to high
    ![alt text](/Pictures/20.png)
        
-### Permanentes (>> miliseconds) IE. Rotura del neutro
+### (MSU) Permanentes 
+* (>> miliseconds) IE. Rotura del neutro
 * Break the circuit (=Open)
    ![alt text](/Pictures/19.png)
     
