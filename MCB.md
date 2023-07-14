@@ -2,10 +2,29 @@
 
 # MCB (Miniature Circuit Breaker)
 * IEC 60898
-* [Interruptor de control de potencia, ICP]
+* GB 10963
+* ITC-BT-22
+
+* PdC 4.5KA
+* Omnipolares
+
+
+
+### Properties
+* In Rated current = 10A [Calibre]
+* Vn Rated Voltage = 230
+* XXX  = 6000A[PdC, Poder de Corte]
+* YYY = A/B/C or 1/2/3[Curva de disparo]
+
+| Example                         | Meaning                                                 |
+| ------------------------------- | ------------------------------------------------------- |
+| ![alt text](/Pictures/62.png)   | C10   <p> Curve C <p> In =10A  <p> XXX=6KA   <p> 1P+1   |
+| ![alt text](/Pictures/63.png)   | iC60H <p> Curve C <p> In =10A  <p> XXX=6KA              |
+| ![alt text](/Pictures/64.png)   | C32   <p> Curve C <p> In =32A  <p> XXX=4.5KA <p> 1P+1   |
+| ![alt text](/Pictures/65.png)   | B32   <p> Curve B <p> In =32A  <p> XXX=6KA <p> 1P+1   |
 
 ## How this work
-* short-circuit: Magnetic
+* Sort-circuit: Magnetic
 * Overload: Thermic (bimetal)
 
 ###  Tripping Curve standard 
@@ -24,3 +43,19 @@ The maximum size of short-circuit current that can be handled.
 10000 A
 20000 A
 25000 A
+
+
+# MCB + Transitorias
+### Transitorias (Rayos, Microsegundos)
+* Deriban a tierra, no hay tiempo de abrir circuito
+   ![alt text](/Pictures/18.png)
+      
+* Internally uses a Varistor: cuando el voltaje es muy alto la resistencia disminuya
+   ![alt text](/Pictures/20.png)
+       
+### Permanentes (>> miliseconds) IE. Rotura del neutro
+* Break the circuit (=Open)
+   ![alt text](/Pictures/19.png)
+    
+
+# MCB + sub-tensiones

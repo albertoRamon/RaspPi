@@ -4,7 +4,7 @@
 ### References
 * [Eaton - Residual Current Device (Pag 25)](https://www.eaton.com/content/dam/eaton/products/electrical-circuit-protection/circuit-breakers/xeffect-rccb/eaton-rcd-application-guide-br019003en-en-us.pdf)
 * [ABB - Protection against earth faults with Residual Current Devices (Pag17)](https://library.e.abb.com/public/9f0e99de3bc740288bc41ab95667f72f/RCD%20Technical%20Guide%20EN.pdf)
-
+* [ Sistema de distribución T-T ]( Sistema de distribución T-T )
 
 ### Nomenclature
 
@@ -22,10 +22,11 @@ Define relationship of expose conductors & Earth:
 
 |  TT                                 | TN - S                          | TN - C                          |
 | ----------------------------------- | ------------------------------- | ------------------------------- |
-|      | ![alt text](/Pictures/49.png)   | ![alt text](/Pictures/50.png)   |
+|  ![alt text](/Pictures/48.png)      | ![alt text](/Pictures/49.png)   | ![alt text](/Pictures/50.png)   |
 | the neutral is usually distributed  | N and PE are separated          | N and PE are the same           |
-| In America                          | In Europe                       |                                 |
+| In America & Spain                  |                     |                                 |
 
+In the picture (Left) the 2nd of Transform (star connection)
 
 
 

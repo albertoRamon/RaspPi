@@ -18,24 +18,15 @@
 
 * Pequeno interruptor Automatico (PIA) [es un magetoterminco]  
    * Protect **one** circuit
+   * In [A]: 6 /10/16/20/25/32/40/50/63
    
 * Protector contra sobretensiones (PCS) (Optional*)
    * Protect us from **External** over current
    * **Installed between IGA & Main RCD**
-   * Transitorias (Rayos, Microsegundos)
-      * Deriban a tierra, no hay tiempo de abrir circuito
-      
-      ![alt text](/Pictures/18.png)
-      
-      * Internally uses a Varistor: cuando el voltaje es muy alto la resistencia disminuya
-      ![alt text](/Pictures/20.png)
-       
-   * Permanentes (>> miliseconds) IE. Rotura del neutro
-   Open the circuit
-    ![alt text](/Pictures/19.png)
-    
    * Transitorias: " Recomendable" (IT-23 REBT)
+   
    Endesa (NRZ103) Obligatoria
+   
    ![alt text](/Pictures/17.png)
  
 * Interruptor Differecial  (ID)
@@ -103,8 +94,19 @@ If you want, you can put > 1 RCD and keeps as Electrificacion Basica
 * Each 5 circuits whe need a RCD (4.1, 4.2, 4.3 are 1 circuit)
 
 # Wires
-6mm2 = 25A
-16mm2 = 40A
+
+| mm2    |  Current  | 
+| ------ |  -------- | 
+| 1      |  XX       | 
+| 1.5    |  XX       | 
+| 2.5    |  XX       | 
+| 4      |  XX       | 
+| 6      |  25A      | 
+| 10     |  XX       | 
+| 16     |  40A      | 
+| 25     |  XX       | 
+
+
 
 Writting format: 
 ```
