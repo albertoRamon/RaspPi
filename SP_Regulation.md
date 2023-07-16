@@ -14,6 +14,7 @@
    
 * Interruptor General Automatico (IGA) [es un magetoterminco]
    * Protect our distribution panel from overcurrents
+   (really protect the derivacion individual)
    * Esta en la cabecera del cuadro, directamente de la derivacion individual
 
 * Pequeno interruptor Automatico (PIA) [es un magetoterminco]  
@@ -80,14 +81,15 @@ If you want, you can put > 1 RCD and keeps as Electrificacion Basica
  ![alt text](/Pictures/56.png)
  This is Grado 2, because there is a dryer (C10)
 
-| Circuit      | Use                    | PIA     |  Max Sockets  |Wire    | Socket         | Wire Cover   | Max per Socket  | Max per circuit    |
-| ------------ | ---------------------- | ------- |  ------------ |------- | -------------- | ------------ | --------------- | ------------------ |
-| Circuit C6   | Iluminacion            |  25A    |  N.A          |  6 mm2 |  N.A           | 25 mm2       | N.A.            | 5.750W             |
-| Circuit C7   | Toma uso general       |  25A    |  N.A          |  6 mm2 |  N.A           | 25 mm2       | N.A.            | 5.750W             |
-| Circuit C8   | Calefaccion            |  25A    |  N.A          |  6 mm2 |  N.A           | 25 mm2       | N.A.            | 5.750W             |
-| Circuit C9   | Aire Acondicionado     |  25A    |  N.A          |  6 mm2 |  N.A.          | 25 mm2       | N.A.            | 5.750W             |
-| Circuit C10  | Secadora               |  16A    |  1            |2,5 mm2 |  16A 2P+T      | 20 mm2       | 3.450W          | N.A.               |
-| Circuit C11  | Automatizacion         |  10A    |  N.A          |1,5 mm2 |  N.A.          | 16 mm2       | N.A.            | 2.300W             |
+| Circuit      | Use                    | PIA     |  Max Sockets  | Wire    | Socket         | Wire Cover   | Max per Socket  | Max per circuit    |
+| ------------ | ---------------------- | ------- |  ------------ | ------- | -------------- | ------------ | --------------- | ------------------ |
+| Circuit C6   | Iluminacion            |  25A    |  N.A          |   6 mm2 |  N.A           | 25 mm2       | N.A.            | 5.750W             |
+| Circuit C7   | Toma uso general       |  25A    |  N.A          |   6 mm2 |  N.A           | 25 mm2       | N.A.            | 5.750W             |
+| Circuit C8   | Calefaccion            |  25A    |  N.A          |   6 mm2 |  N.A           | 25 mm2       | N.A.            | 5.750W             |
+| Circuit C9   | Aire Acondicionado     |  25A    |  N.A          |   6 mm2 |  N.A.          | 25 mm2       | N.A.            | 5.750W             |
+| Circuit C10  | Secadora               |  16A    |  1            | 2,5 mm2 |  16A 2P+T      | 20 mm2       | 3.450W          | N.A.               |
+| Circuit C11  | Automatizacion         |  10A    |  N.A          | 1,5 mm2 |  N.A.          | 16 mm2       | N.A.            | 2.300W             |
+| Circuit C11  | Recarga Vehiculo elect |  16A    |  4            | 2,5 mm2 |  N.A.          | 20 mm2       | N.A.            | 3.650W             |
 
 * If we have more than 30 Lighta or 20 Sockets, we need use Electriccation Grado 2, Circuit  6 & 7
 * If we have secadora, we need use Electriccation Grado 2

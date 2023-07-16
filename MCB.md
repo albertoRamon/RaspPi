@@ -34,6 +34,11 @@ Allow define an hierarchy (Selectivity)
 * Curve C
 * Curve D
 
+
+### Normalized values for In:
+* 6 / 10/ 16 / **20** / 25 / **32** /40 / **50** / 63 / 80 / **100** / **125** A
+* Industrial: 125 / 160 / 250 / 400 / 630 / 800 / 1250 A
+
 ### Breaking capacity
 The maximum size of short-circuit current that can be handled.
 1500 A
@@ -48,6 +53,10 @@ The maximum size of short-circuit current that can be handled.
 # MCB + Transitorias
 * [2/3 PROTECCIÓN frente a SOBRETENSIONES permanentes y transitorias combinado con IGA](https://www.youtube.com/watch?v=NPNpR61kkC4&list=PL54-5yiMdV8FYDGRnyAfPefKPnuhqPtuQ&index=24)
 * [Schneider Combi SPU 1603](https://www.se.com/il/en/product/16301/combi-spu-circuit-breaker-with-integrated-overvoltage-protection-1p-+-n-25a/)
+
+| Transitorias + Permanentes      | 
+| ------------------------------- | 
+| ![alt text](/Pictures/66.png) | 
 
 
 ### (MTU) Transitorias 

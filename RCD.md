@@ -1,4 +1,7 @@
 # RCD (Residual Current Device) /  Differential Circuit Breaker
+* IEC 61008-1  RCCB
+* IEC 61009-1 (2021) RCBO
+* IEC 62423  RCCB Type F & B
 
 ### References
 * [Eaton - Residual Current Device](https://www.eaton.com/content/dam/eaton/products/electrical-circuit-protection/circuit-breakers/xeffect-rccb/eaton-rcd-application-guide-br019003en-en-us.pdf)
@@ -32,6 +35,7 @@ Parameters
 * In  = Rated current RCCB [Corriente Nominal]
 * Inc  = Conditional short-circuit resistance [Corriente Nominal de Cortocicuito]
    Is the maximum I can support without damage the RCD. 
+   Usually 3kA
 
 ![alt text](/Pictures/26.png)
 * Im = Break Capacity [Capacidad Nominal de Apertura y Ruptura]
