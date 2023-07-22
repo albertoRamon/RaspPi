@@ -125,8 +125,8 @@ Normalized values for IΔn:
 * 1 A
 
 ### Normalized values for In:
-* 16 / 25 /4 A
-* 63 / 80 / 100 A
+* 6 / 10/ 16 / 25 /40 /63 / 80 
+* for High current: 25 / 40 / 63 / 100 / 160 / 250 / 400 / 600
 for 40 °C if is more there is a table to calculate the In
 
 
