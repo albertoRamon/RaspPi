@@ -57,10 +57,11 @@ The maximum size of short-circuit current that can be handled.
 | ![alt text](/Pictures/66.png)   | 
 
 
-### MCB (SPU) Transitorias 
+### MCB + Surge Transient OverVoltages (SPU)  [Transitorias}
 * Protect from Thunders. Thus, 
-   * Microseconds
+   * Microseconds & KVolt
    * There is no time to break the MCB (Mechanical system), need derived to eart
+   Need have good earth connection
       
 * Internally uses a Varistor: 
    * The resistence is lower when the voltege is to high
@@ -74,13 +75,18 @@ The maximum size of short-circuit current that can be handled.
    * Is only one use, when is activated, need be replaced
    
    
-  
        
-### MCB (MSU) Permanentes 
+### MCB (MSU) Permanent 
 * (>> miliseconds) IE. Rotura del neutro
 * Break the circuit (=Open)
    ![alt text](/Pictures/18.png)
-    
+   
+###  Examples
+* [Schneider Combi SPU](https://www.se.com/es/es/product-range/61364-resi9/?parent-subcategory-id=1665&filter=business-5-residencial-y-peque%C3%B1o-terciario&N=1126362977+827821466) [R9L20640](https://www.se.com/es/es/product/R9L20640/limitador-sobretensiones-transitorias-y-permanentes-iga-resi9-combi-1p+n-40-a/) 1P+N 40A
+* [Tocano Combi 2P32T15](https://toscano.es/en/categoria-producto/vigivolt-en/permanent-transitional/) 
+* [Varistor, only transient]
+ 
+ 
 # MCB + Volt Portect
 
 ### MCB + Over Voltage

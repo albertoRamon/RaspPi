@@ -168,3 +168,13 @@ Thus in this scenario could have 7 circuits and **1 RCD**
  with SPL, thus 
  IRVE (W) = 6Parking Spot * 0.3Fs * 3680W = 6624W
  ```
+ 
+ 
+ # Calculo secciones de cable:
+Has to fulfill:
+1. Criterio de intensidad maxima o de calentamiento
+   
+2. Criterio de la caida de tension
+
+3. Criterio de la intensidad de cortocircuito
+[Conceptos de cálculo Intensidad cortocircuito en Baja Tensión (B.T.) UPV](https://www.youtube.com/watch?v=mGmUGvfbj0Y)
