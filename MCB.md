@@ -62,7 +62,10 @@ The maximum size of short-circuit current that can be handled.
    * Microseconds
    * There is no time to break the MCB (Mechanical system), need derived to eart
       
-* Internally uses a Varistor: The resistence is lower when the voltege is to high
+* Internally uses a Varistor: 
+   * The resistence is lower when the voltege is to high
+   * Is only one use, when is activated, need be replaced
+   
    ![alt text](/Pictures/69.png)
    ![alt text](/Pictures/20.png)
        
