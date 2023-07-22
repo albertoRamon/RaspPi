@@ -24,7 +24,7 @@
 | ![alt text](/Pictures/65.png)   | <p>B32:   <p> Curve B <p> In =32A  <p> XXX=6KA <p> 1P+1   |
 
 
-|   ![alt text](/Pictures/62.png)                             |     ![alt text](/Pictures/63.png)                  | ![alt text](/Pictures/64.png)                                | ![alt text](/Pictures/65.png                               | 
+|   ![alt text](/Pictures/62.png)                             |     ![alt text](/Pictures/63.png)                  | ![alt text](/Pictures/64.png)                                | ![alt text](/Pictures/65.png)                              | 
 | ----------------------------------------------------------- | -------------------------------------------------- |  ----------------------------------------------------------- | ---------------------------------------------------------- |
 | <p>C10:   <p> Curve C <p> In =10A  <p> XXX=6KA   <p> 1P+1   | <p>iC60H: <p> Curve C <p> In =10A  <p> XXX=6KA     |  <p>C32:   <p> Curve C <p> In =32A  <p> XXX=4.5KA <p> 1P+1   |  <p>B32:   <p> Curve B <p> In =32A  <p> XXX=6KA <p> 1P+1   |
 
