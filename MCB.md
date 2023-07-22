@@ -16,20 +16,11 @@
 * XXX  = 6000A[PdC, Poder de Corte]
 * YYY = A/B/C or 1/2/3[Curva de disparo]
 
-| Example                         | Meaning                                                 |
-| ------------------------------- | ------------------------------------------------------- |
-| ![alt text](/Pictures/62.png)   | <p>C10:   <p> Curve C <p> In =10A  <p> XXX=6KA   <p> 1P+1   |
-| ![alt text](/Pictures/63.png)   | <p>iC60H: <p> Curve C <p> In =10A  <p> XXX=6KA              |
-| ![alt text](/Pictures/64.png)   | <p>C32:   <p> Curve C <p> In =32A  <p> XXX=4.5KA <p> 1P+1   |
-| ![alt text](/Pictures/65.png)   | <p>B32:   <p> Curve B <p> In =32A  <p> XXX=6KA <p> 1P+1   |
-
 
 |   ![alt text](/Pictures/62.png)                             |     ![alt text](/Pictures/63.png)                  | ![alt text](/Pictures/64.png)                                | ![alt text](/Pictures/65.png)                              | 
 | ----------------------------------------------------------- | -------------------------------------------------- |  ----------------------------------------------------------- | ---------------------------------------------------------- |
 | <p>C10:   <p> Curve C <p> In =10A  <p> XXX=6KA   <p> 1P+1   | <p>iC60H: <p> Curve C <p> In =10A  <p> XXX=6KA     |  <p>C32:   <p> Curve C <p> In =32A  <p> XXX=4.5KA <p> 1P+1   |  <p>B32:   <p> Curve B <p> In =32A  <p> XXX=6KA <p> 1P+1   |
 
-|    | 
-| )   |
 ## How this work
 * Sort-circuit: Magnetic
 * Overload: Thermic (bimetal)
@@ -46,7 +37,7 @@ Allow define an hierarchy (Selectivity)
 * 6 / 10/ 16 / **20** / 25 / **32** /40 / **50** / 63 / 80 / **100** / **125** A
 * Industrial: 125 / 160 / 250 / 400 / 630 / 800 / 1250 A
 
-### Breaking capacity
+### Breaking capacity (I)
 The maximum size of short-circuit current that can be handled.
 1500 A
 3000 A
@@ -57,29 +48,31 @@ The maximum size of short-circuit current that can be handled.
 25000 A
 
 
-# MCB + Transitorias
+# MCB + Current Protect
 * [2/3 PROTECCIÓN frente a SOBRETENSIONES permanentes y transitorias combinado con IGA](https://www.youtube.com/watch?v=NPNpR61kkC4&list=PL54-5yiMdV8FYDGRnyAfPefKPnuhqPtuQ&index=24)
 * [Schneider Combi SPU 1603](https://www.se.com/il/en/product/16301/combi-spu-circuit-breaker-with-integrated-overvoltage-protection-1p-+-n-25a/)
 
 | Transitorias + Permanentes      | 
 | ------------------------------- | 
-| ![alt text](/Pictures/66.png) | 
+| ![alt text](/Pictures/66.png)   | 
 
 
-### (MTU) Transitorias 
-* Rayos, Microseconds
-* Thus, derived to earth, there is no time to break the MCB
-   ![alt text](/Pictures/18.png)
+### MCB (SPU) Transitorias 
+* Protect from Thunders. Thus, 
+   * Microseconds
+   * There is no time to break the MCB (Mechanical system), need derived to eart
       
 * Internally uses a Varistor: The resistence is lower when the voltege is to high
+   ![alt text](/Pictures/69.png)
    ![alt text](/Pictures/20.png)
        
-### (MSU) Permanentes 
+### MCB (MSU) Permanentes 
 * (>> miliseconds) IE. Rotura del neutro
 * Break the circuit (=Open)
-   ![alt text](/Pictures/19.png)
+   ![alt text](/Pictures/18.png)
     
+# MCB + Volt Portect
 
-# MCB + Over Voltage
+### MCB + Over Voltage
 
-# MCB + Under Voltage
+### MCB + Under Voltage
