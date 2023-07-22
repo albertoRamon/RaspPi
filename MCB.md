@@ -64,9 +64,11 @@ The maximum size of short-circuit current that can be handled.
       
 * Internally uses a Varistor: 
    * The resistence is lower when the voltege is to high
+   ![alt text](/Pictures/69.png)
+   
    * Is only one use, when is activated, need be replaced
    
-   ![alt text](/Pictures/69.png)
+   
    ![alt text](/Pictures/20.png)
        
 ### MCB (MSU) Permanentes 
